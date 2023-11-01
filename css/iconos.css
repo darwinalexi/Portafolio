@@ -1,0 +1,50 @@
+body{
+    background-color: aquamarine;
+}
+.menu{
+    width: 300px;
+    height: 850px;
+    position: fixed;
+    background-color: gainsboro;
+    
+}
+i{
+    margin: 30px;
+    font-size: 20px;
+    color: brown;
+}
+img{
+
+    position: relative;
+    left:  400px;
+    
+}
+a {
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    width: 19.5%;
+    margin-right: 0.625%;
+    text-align: center;
+    line-height: 3;
+    color: black;
+    margin: 4px;
+    position: relative;
+    top: 850px;
+  }
+  
+  li:last-child a {
+    margin-right: 0;
+  }
+  
+  a:link, a:visited, a:focus {
+    background: yellow;
+  }
+  
+  a:hover {
+    background: orange;
+  }
+  
+  a:active {
+    background: red;
+    color: white;

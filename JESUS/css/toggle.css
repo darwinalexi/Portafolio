@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 60px;
+  }
+/*Oculta el input del tipo checkbox dentro del toggle. Como el checkbox está oculto, se utilizará el estilo de la etiqueta label para representar el estado del toggle.*/
+  .toggle input {
+    display: none;
+  }
+  /*se creo el recuadro donde va la bola y se personaiza*/
+  .toggle label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:  #DEA79E;
+    border-radius: 34px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  /*con esta parte se crea el boton del movimiento*/
+  .toggle label:before {
+    /*crea el espacio que ocuppara la bola o recuadro*/
+    content: '';
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: rgb(178, 20, 20);
+    top: 4px;
+    left: 4px;
+    transition: all 0.3s ease;
+  }
+  /*es es el que hace cambio a .toggle label*/
+  .toggle input:checked + label {
+    background-color: orange;
+  }
+  /*La propiedad transform en este caso utiliza la función translateY() para realizar una traducción vertical. El valor 26px se especifica 
+  como el desplazamiento en píxeles. Esto significa que cuando el input está marcado (el toggle está activado),*/
+  .toggle input:checked + label:before {
+    /*aqui depende si se desliza hacia abajo o horinzal mente sies y pues verical y si es x es horizontal*/
+    transform: translateY(26px);
+  }
+  

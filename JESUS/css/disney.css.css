@@ -1,0 +1,7 @@
+@font-face{
+    font-family:"disney"
+    src: url(../fuentes/disney.ttf);src: url(../fuentes/waltograph42.otf);
+}
+#fuente-personalizada{
+    font-family:"disney"
+}

@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .hamburguer-menu {
+    /*se usa para desaparecer elementos*/
+    display: none;
+  }
+  
+  nav {
+    background-color: #10315D;
+    height: 100px;
+    align-items: right;
+    padding: 25px 25px;
+    height: 90px;
+    margin: 0;
+  }
+  
+  .main-menu {
+    margin-top: 30px;
+    text-align: right;
+  }
+  
+  a {
+    margin-top: 10px;
+    text-decoration: none;
+    color: inherit;
+    font-size: 14px;
+  }
+  
+  .logo {
+    display: inline-flex;
+    margin-top: 0;
+    margin-left: 0;
+    float: left;
+    width: 300px;
+    height: 80px;
+  }
+  
+  .item-style {
+    display: inline-block;
+    list-style: none;
+    width: 12%;
+    padding: 5px 10px;
+    background-color: #10315D;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  .item-style:hover {
+    background-color: #fff;
+    color: #000;
+  }
+
+  /* se utiliza para hacer modificaciones segun el tamaño de la pagina*/
+  @media only screen and (max-width: 850px) {
+    .main-menu {
+      position: fixed;
+      left: -100%;
+      transition: all 1s; /* Agregar la transición */
+      text-align: center;
+      margin-top: 22px;
+    }
+    
+    .main-menu-block {
+      display: block;
+      padding: 30px;
+      height: 86px;
+      width: 120%;
+      transition: all 1s;
+      background-color:rgb(48, 48, 48, .8) ;
+      left: -90px;
+      position: fixed;
+      margin: 0;
+      
+    }
+
+    .main{
+      position: relative;
+      top: -59px;
+    }
+  
+    .item-style {
+      display: block;
+      /*no deja mostrar los puntos de las listas*/ 
+      list-style: none;
+      width: 300px;
+      padding: 5px 10px;
+      background-color: #10315D;
+      opacity: 0,5;
+      text-align: center;
+      font-size: 16px;
+      color: #fff;
+      border-bottom: 1px solid #000;
+      transition: all 2s;
+      position: relative;
+      top: -30px;
+      left: 0;
+      background-color:transparent;
+      width: 100%;
+      cursor: pointer;
+      
+    }
+  /* deja mover los items y hacer cambios*/
+    .item-style:hover {
+      left: 230px;
+    width: 30%;
+    background-color: #10315D;
+    color: #fff;
+  }
+  
+    .hamburguer-menu {
+      position: relative;
+      bottom: 100px;
+      display: inline-block;
+      color: #10315D;
+      font-size: 2.3em;
+      margin-top: 18px;
+      margin-left: 25px;
+      width: 100%;
+      transition: all 0.5s; /* Agregar la transición */
+    }
+  
+    .hamburguer-menu:hover {
+      cursor: pointer;
+      left: 0;
+    }
+  
+    .logo {
+      /*prmite alinear elementos a cualquir lado*/
+    float: right;
+    }
+  
+    nav {
+      background-color: #fff;
+    }
+  }

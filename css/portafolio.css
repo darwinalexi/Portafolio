@@ -1,0 +1,358 @@
+* {
+    padding: 0;
+    margin: 0;
+    width: 350px;
+    background-color: hsl(182, 48%, 20%);
+  
+}
+
+.box-null {
+    
+    position: fixed;
+    left: -262px;
+    transition: all 2s ease;
+}
+.box{
+    width: 265px;
+    height: 100%;
+    background-color: hsl(182, 48%, 27%);
+    text-align: center;
+    list-style: none;
+    z-index: 2;
+    position: fixed;
+    left: 0.2vh;
+    transition: all 2s ease;
+}
+
+.NOM {
+    font-size: 20px;
+    position: absolute;
+    top: 190px;
+    left:-3px;
+    cursor: pointer;
+    background-color: hsl(182, 48%, 27%);
+    width: 250px;;
+
+}
+
+img {
+    width: 130px;
+    height: 150px;
+    position: relative;
+    top: 220px;
+    background-color: hsl(182, 48%, 27%);
+
+}
+
+p {
+    position: relative;
+    
+}
+
+.dar {
+    position: relative;
+    top: 250px;
+    left: -6px;
+    cursor: pointer;
+    background-color: hsl(182, 48%, 27%);
+    width: 250px;
+    z-index: 1;
+}
+
+.darwin{
+    position: relative;
+    top: 280px;
+    left: -6px;
+    cursor: pointer;
+    width: 250px;
+    height: 8px;
+    background-color: hsl(182, 48%, 27%);
+}
+
+i {
+    color: #000;
+    font-size: 40px;
+    margin: 10px;
+    position: relative;
+    top: 500px;
+    bottom: 300px;
+    left: 500px;
+    cursor: pointer;
+}
+
+.main-box {
+    position: relative;
+    bottom: 400px;
+    display: flex;
+}
+
+.infor {
+    position: relative;
+    left: 270px;
+    top: 700px;
+}
+
+h1 {
+    font-family: 'Monomaniac One', sans-serif;
+}
+
+p {
+    font-family: 'Monomaniac One', sans-serif;
+}
+
+.NUM {
+    text-align: center;
+    position: relative;
+    bottom: 870px;
+    left: 540px;
+    top: 100px;
+}
+
+.profesion {
+    font-size: 60px;
+    float: right;
+    position: relative;
+    bottom: 400px;
+    left: 690px;
+    top: 80px;
+}
+
+.perfil {
+    font-size: 60px;
+    float: right;
+    position: relative;
+    top: 50px;
+    left: 280px;
+    cursor: pointer;
+    z-index: -12;
+}
+
+.perfil1 {
+    position: relative;
+    bottom: -120px;
+    left: 280px;
+    cursor: pointer;
+    height: auto;
+    
+}
+.work{
+    position: absolute;
+    right: 400px;
+    left: 266px;
+    top: 127vh;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(200px, 1fr));
+   grid-gap: 50px;
+    width: 70%;
+    padding-top: 23px;
+}
+.works{
+    width: 250px;
+    height: 270px;
+    display: block;
+}
+.title{
+    grid-column: span 3;
+    grid-row: 1;
+    width: auto;
+    height: auto;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+a> img{
+    width: 250px;
+    height: 250px;
+}
+a >img:hover{
+    width: 250px;
+    height: 250px;
+    border: 12px black solid;
+    transition: all 1.5s ;
+}
+a{
+    margin: 14px;
+    width: 67%;
+    height: 5px;
+    border-radius: 5%;
+    text-decoration: none;
+    width: 20px;
+    height: 10px;
+    background-color: brown;
+    color: black;
+}
+a:hover{
+    background-color: hsl(182, 48%, 27%);
+    
+    opacity: 0.2px;
+    width: 78px;
+}
+.DARWIN{
+    position: relative;
+    top: 270px;
+    left: -6px;
+    cursor: pointer;
+    background-color: hsl(182, 48%, 27%);
+    width: 250px;
+    z-index: 1;
+    bottom: 230px;
+}
+.darwin1{
+    position: relative;
+    left: -6px;
+    cursor: pointer;
+    width: 250px;
+    height: 8px;
+    background-color: hsl(182, 48%, 27%);
+    bottom: -250px;
+    z-index: 2;
+}
+header{
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    height: 70px;
+    text-align: center;
+    justify-content: center;
+    background-color: aliceblue;
+    z-index: 2;
+     background-color: hsl(182, 48%, 27%);
+     box-shadow: 0 20px 35px  grey;
+}
+ul{
+    background-color: none;
+    display: flex;
+    list-style: none;
+}
+li{
+    background-color: hsl(182, 48%, 27%);
+    float: left;
+    position: relative;
+    right: 100px;
+}
+li> a{
+    position: relative;
+    left: 750px;
+    top: 25px;
+    margin-left: 20px;
+    cursor: pointer;
+    z-index: 3;
+    background-color: hsl(182, 48%, 27%);
+    
+}  
+ .fa-bars {
+    position: fixed;
+    left:10px;
+    top:  0;
+    z-index: 500;
+    width: auto;
+    height: 36px;
+    font-size: 30px;
+    color: brown;
+    background-color: transparent;
+}
+.menu{
+    position: fixed;
+    left: 0px;
+    background-color: antiquewhite;
+    z-index: 3;
+}
+
+@media screen and (max-width: 600px) {
+    
+    header{
+        display: none;
+    }
+    
+    .principal {
+        transform: translateY(10vh);
+      }
+
+    *{
+        background-color: hsl(182, 48%, 27%);
+
+}
+.box{
+    width: 400px;
+    position: fixed;
+    top: 0px;
+    left: 40px;
+    min-width: 400px;
+    max-width: 400px;
+}
+.main-box{
+    display: none;
+}
+.NOM{
+    position: relative;
+    left: 80px;
+}
+.dar{
+    position: relative;
+    left: 80px;
+    top: 210px;
+
+}
+.darwin1{
+    position: absolute;
+    top: 540px;
+    left: 80px;
+}
+.DARWIN{
+    position: relative;
+    top: 240px;
+    left: 80px;
+}
+.darwin{
+    z-index: 1;
+    position: relative;
+    top: 250px;
+    left: 80px;
+}
+.profesion{
+    display: none;
+}
+.NUM{
+    display: none;
+}
+.perfil{
+    position: fixed;
+    top: 900px;
+    left: 0;
+    
+}
+.perfil1{
+    position:relative;
+    top: 990px;
+    left: 0px;
+}
+.infor{
+    position: fixed;
+    top: 650px;
+    left:0px;
+    z-index: 1;
+}
+.work{
+    position: fixed;
+    top: 70em;
+    left: 0px;
+    display: block;
+   
+}
+img{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    bottom: 40px;
+}
+ul{
+    position: absolute;
+    right: 180%;
+    z-index: 1;
+    font-size: 1em;
+   
+}
+}

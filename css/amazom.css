@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    min-width: 20%;
+    max-width: 100%;
+    width: 100%;
+}
+header{
+    background-color: black;
+    height: 73px;
+    width :100%;
+    min-width: 50%;
+    max-width: 100%;
+        display: grid; 
+}
+
+.image{
+    position: relative;
+    left: 12px;
+    top: 9px;
+    width: 140px;
+    height: 60px;
+    
+}
+img{
+    width: 60px;
+    height: 20px;
+    position: relative;
+    left: 30px;
+
+
+}
+@font-face{
+    font-family: amazon;
+    src: url(../tipografia/itc-officina-sans-bold.otf);
+}
+.image > .name{
+    color: white;
+    position: relative;
+    top: 5px;
+    left: 15px;
+    z-index: 2;
+    font-family:amazon;
+    font-size: 1.9em;
+}
+.image:hover{
+    border: #C8C8CF 1px solid;
+    cursor: pointer;
+}
+i{
+    color:white;
+    font-size: 22px;
+    position: relative;
+    top: 25px;
+}
+.mas{
+    color: white;
+    position: relative;
+    bottom: 50px;
+    left: 10em;
+    width: 100px;
+    height: 60px;
+}
+.mas:hover{
+    border: #C8C8CF 1px solid;
+    width: 100px;
+    height: 60px;
+    cursor: pointer;
+}
+.text{
+position: relative;
+bottom: 10px;
+left: 20px;
+width: auto;
+}
+.text-1{
+position: relative;
+bottom: 10px;
+left: 20px;
+width: auto;
+color: #C8C8CF ;
+}
+select{
+    height: 25px;
+   background-color: #B2B2BD ;
+   width: 80px;
+}
+select:focus{
+    outline: none;
+}
+
+.sarch {
+    position: relative;
+    left: 264px;
+    bottom: 90px;
+    width: 650px;
+    display: grid;
+   /* grid-template-columns:"   select                   input                        lupa                            bandera                 box-1                   box-2                   car"/
+                            minmax(100px, 200px)       minmax(100px, 200px)       minmax(100px, 200px)             minmax(100px, 200px)    minmax(100px, 200px)    minmax(100px, 200px)   minmax(100px, 200px);
+   */ grid-gap:0px ;                        
+    max-width: 100%;
+    min-width: 40%;
+    margin-right: 0px;
+     
+}
+
+input {
+    position: relative;
+    left: 90px;
+    bottom: 23px;
+    display: flex;
+    flex: 1 0 140px;
+    width: 80%;
+    height: 22px;
+}
+
+.sarch> input:focus{
+    outline: none;
+}
+.lupa {
+    position: relative; 
+    top: -48px;
+    left:90% ;
+    flex: 1 0 140px;
+    background-color: orange;
+    width: 40px;
+    height: 25px;
+    z-index: 1;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    float: right;
+    border-top-right-radius:12px;
+    /*border-top-left-radius:12px;*/
+    border-bottom-right-radius:12px;
+}
+#lupas {
+    position: absolute;
+    top: 2px;
+    left: 6px;
+    color: #000;
+    font-size:20px;
+    z-index: 1;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+.bandera{
+    position: relative;
+    left: 56pc;
+    bottom: 170px;
+    width: 72px;
+    height: 45px;
+}
+.bandera:hover{
+    border: white 1px solid;
+    cursor: pointer;
+}
+.bandera > img{
+    width: 25px;
+    height: 20px;
+    position: relative;
+    bottom: -10px;
+    left: 5px;
+}
+.bandera > p{
+    color: wheat;
+    position: relative;
+    left:35px;
+    bottom: 12px;
+}
+.box-1{
+    width: 150px;
+    height: auto;
+    position: fixed;
+    left: 130vh;
+bottom:670px ;    
+    color: white;
+}
+.box-1:hover{
+    border: white 1px solid;
+    cursor: pointer;
+}
+.box-1 > p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-2{
+    position: fixed;
+    left: 72pc;
+    top: 2pc;
+   color:white;
+    width: 100px;
+}
+.box-2:hover{
+    border: white 1px solid;
+    cursor: pointer;
+}
+.car{
+    width: 100px;
+    position: relative;
+    float: right;
+    
+    height: 8vh;
+}
+.car:hover{
+    border: white 1px solid;
+    cursor: pointer;
+}
+.car  > P{
+    color: white;
+    padding-left: 33px;
+
+}
+.images{
+    background-size:cover;
+}
+.main-content{
+    width: 90%;
+    height: 90%;
+    background-color: white;
+}
+.images > img{
+    position: absolute;
+    top: 100px;
+    width: 400px;
+    height: 200px;
+}
+.images{
+    width: 400px;
+    height: 200px;
+    cursor: pointer;
+}
+.modal{
+    width: 60%;
+    height: 420px;
+    background-color: white;
+    position: relative;
+    left: 300px;
+    bottom: 123px;
+    z-index: 100;
+    
+    border: #000 1px solid;
+}
+.modal > i{
+position: absolute;
+top: 0;
+color: #000;
+cursor: pointer;
+padding: 23px;
+}
+.modal >i:hover{
+    font-size: 30px;
+    transition: 1s;
+}
+.ocultar{
+    display: none;
+}
+.articulo{
+width: 200px;
+height: 200px;
+position: absolute;
+left: 120px;
+top: 10vh;
+}
+.main{
+    width: 100%;
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat( 2,50%);
+    grid-template-rows: repeat(2,50%);
+    grid-gap: 12px;
+    position: absolute;
+    left: 50px;
+    top: -20px;
+}
+.imagenes{
+    display: grid;
+    grid-template-columns: repeat(2 ,50px);
+    grid-template-rows: repeat(2 ,20px);
+    grid-gap: 50px;
+    position: absolute;
+    top: 35vh;
+    left: 60px;
+}
+.imagen2 > img{
+    width: 80px;
+    height: 50px;
+}
+li{
+    list-style: none;
+}
+ul{
+    padding-top: 12px;
+}
+.description{
+
+margin-top: 153px;
+font-size: 1.3em;
+}

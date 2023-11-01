@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    width: 200px;
+    height: 400px;
+    background-color: blue;
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 500px 0 0 400px;
+    position: relative;
+    left: 68%;
+}
+.box-static{
+    position: static;
+    background-color:gray;
+    position: relative;
+    top: 40px;
+}
+.box-absolute{
+    position: absolute;
+    background-color: goldenrod;
+    bottom: 100px;
+    left: -400px;
+    top: -500px;
+}
+
+.box-fixed{
+    position: fixed;
+    background-color: brown;
+    width: 100%;
+    height: 80px;
+    right: 0;
+    bottom: 455px;
+}
+.par{
+    font-size: 2em;
+    line-height: 1.6em;
+    margin: 40px;
+    text-align: justify;
+    justify-content: center;
+}
+.box-relative{
+    background-color: chartreuse;
+    position: relative;
+    top: 60px;
+    left: 40px;
+    width: 400px;
+    height: 400px;
+}
+

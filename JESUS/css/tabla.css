@@ -1,0 +1,66 @@
+table{
+     border-collapse: collapse;
+     width: auto;
+     position: relative;
+     top: 200px;
+}
+th {
+     background-color:aqua;
+    padding: 10px 15px 8px 15px;
+    border: solid 1px black;
+    margin: 2px;
+}
+td{
+    border-width: 1PX ;
+    padding: 10px 15px 8px 15px;
+    
+}
+.box{
+    display: flex;
+    justify-content: center;
+}
+h1{
+    display: flex;
+    justify-content: center ;
+    position: relative;
+    top: 200px;
+    font-family: cursive;
+}
+
+td{
+    background-color: aqua;
+    border: solid 1px black;
+    opacity: 1;
+
+}
+.principal{
+    border-collapse:collapse ;border-radius: 20px, 0px;
+}
+.da{
+    background-color: cadetblue;
+}
+.dar{
+    background-color: blueviolet;
+}
+.win{
+    background-color: brown;
+}
+.alex{
+    background-color: darkred;
+}
+.is{
+    background-color: crimson;
+}
+.gue{
+    background-color: darkkhaki;
+}
+.ro{
+    background-color: chocolate;
+}
+.ba{
+    background-color: darkolivegreen;
+
+}
+.os{
+    background-color: darkorchid;
+}

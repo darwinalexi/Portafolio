@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+body{
+    display: grid;
+    width: 100%;
+    grid-template: "empty-left             main-page                 empty-right" 100vh /
+                    minmax(30px, 1fr)      minmax(700px, 1200px)     minmax(50px, 1fr);
+}
+h1{
+   position: absolute;
+   right: 40%;
+   font-family: 'Pacifico', cursive;
+   font-weight: 1.7em;
+   color: blue;
+}
+ul{
+position: absolute;
+right: 35vh;
+}
+li{
+    display: inline-block;
+    font-size: 1.5em;
+    padding: 40px;
+    cursor: pointer;
+}
+
+.main-page {
+    grid-area: main-page;
+    position:relative ;
+    top: 100px;
+}
+header {
+    margin-top: 50px;
+    gap: 30px;
+    display: grid;
+    grid-template: "logo main-menu" 80px  /
+                    150px minmax(700px, 100%);
+height:200px ;
+}
+.logo1 {
+    width: 70px;
+    height: 80px;
+    z-index: 1;
+    
+}
+.main-menu {
+    grid-area: main-menu;
+    background-color: rgb(40, 167, 69);
+    height: 100px;
+    width: 100%;
+    padding-left:30px ;
+}
+.style-text {
+    font-family: Verdana,sans-serif;
+    font-size: 1.6em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-content {
+    display: grid;
+    margin-top: 15px;
+    gap: 40px 60px;
+    grid-template: "main-img  main-img   main-img" 600px 
+                   "article-1 article-2 article-3" 
+                   "article-4 article-5 article-6" /
+                   1fr          1fr       1fr;
+}
+.main-img {
+    grid-area: main-img;
+    background-color: darkcyan;
+    z-index: 1;
+    width: 136vh;
+    height: 70vh;
+}
+.article-1 {
+    grid-area: article-1;
+}
+.article-2 {
+    grid-area: article-2;
+}
+.article-3 {
+    grid-area: article-3;
+   
+}
+.article-4 {
+    grid-area: article-4;
+}
+.article-5 {
+    grid-area: article-5;
+}
+.article-6 {
+    grid-area: article-6;
+   
+}
+.img-article{
+    height: 350px;
+    
+}
+.style-text-article {
+    margin-top: 30px;
+    text-align: justify;
+    font-size: 1.4em;
+    color: rgb(48, 48, 48.9);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.4em; /* Por defecto viene con 1.2 em */
+    display: flex;
+    justify-content: center;
+}
+.img{
+    width: 350px;
+    height: 280px;
+}
+img{
+    width: 350px;
+    height: 360px;
+}
+.logo1{
+    width: 100px;
+    height: 100px;
+}
+@media screen and (max-width: 900px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-image: url(../img/maquetacion/fondo.png);
+        min-width: 900px;
+        max-width: 900px;
+        background-repeat:no-repeat ;
+        background-size: cover;
+        opacity: 0.9px;
+    }
+    header{
+        display: block;
+        height: 130px;
+        margin-left: 0px;
+        margin-top: 12px;
+        width: 80vh;
+    }
+    h1{
+        color: blue;
+        position: absolute;
+        top: 0;
+    }
+    .logo1{
+        width: 750px;
+        height: 750px;
+        position: absolute;
+        top: 150px;
+    }
+    .main-menu{
+      position: relative;
+      top: 0;
+      left:0;
+      grid-area: main-menu;
+      background-color: rgb(40, 167, 69);
+      height: 100px;
+      width: 100%;
+      
+}
+ul{
+    position: absolute;
+    right: 35vh;
+    display: inline-block;
+    }
+li{
+    display: inline-block;
+    font-size: 1.5em;
+    padding: 40px;
+}
+.main-content{
+    position: absolute;
+    top: 850px;
+    display: grid;
+    grid-template:"main-content  main-content" 300px 
+                  "article-1 article-2" 
+                  "article-3 article-4"
+                  "article-5 article-6"/
+                  1fr          1fr  ;
+    z-index: 1;
+}
+.main-img{
+    display: none;
+}
+}
+
+@media screen and (max-width: 600px) {
+
+   *{
+    margin: 0;
+    padding: 0;
+   }
+   body{
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/maquetacion/colombia.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: auto;
+   }
+   body::before{
+    content: "";
+    background-color: white;
+    background-attachment: fixed;
+    position: absolute;
+    width: 100%;
+    height: 1050vmax;
+    margin: 0;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+   }
+   h1{
+    position: absolute;
+    right: 89px;
+    font-family: 'Pacifico', cursive;
+    font-weight: 1.7em;
+    color: blue;
+ }
+    header {
+        display: block;
+        height: 130px;
+        margin-left: 0;
+        margin-top: 12px;
+        width: 75%; /* Cambiado a ancho completo */
+    }
+
+    .logo1 {
+        height: 300px;
+        width: 300px;
+        max-width: 100%; 
+    }
+
+    .main-menu {
+        position: absolute;
+        top: 0;
+        left: 23px;
+        width: 100%;
+        height: 50px;
+    }
+
+    .main-img {
+        width: 100%; 
+        height: 10vh; 
+        padding-top: 120px;
+    }
+   
+    .main-content {
+        display: grid;
+        grid-template:
+            "main-content" 100px
+            "spacer" 20px /* Agregamos una celda separadora de 20px */
+            "article-1"
+            "article-2"
+            "article-3"
+            "article-4"
+            "article-5"
+            "article-6"
+            / 1fr;
+        width: 40vh; 
+        margin-bottom: 300px;
+        position: absolute;
+        top: 100px;
+        left: 0px;
+        margin-left: 0;
+        grid-gap: 200px;
+    }
+    
+    /* Agregamos estilos para la celda separadora */
+    .main-content::before {
+        content: ""; /* Contenido vacío */
+        grid-area: spacer; /* Colocamos esta celda en la posición "spacer" */
+    }
+    .main-img{
+        width: 100%;
+        height: 15vh;
+        
+    }
+    .logo{
+        width: 310px;
+        height: 50px;
+    }
+    .main-menu {
+        display: none;
+    }
+
+    }
+    img {
+        /* ... */
+        width: 100%; /* Ancho al 100% */
+        height: auto; /* Ajusta la altura automáticamente */
+        max-width: 100%; /* Ancho máximo al 100% */
+        position: relative; /* Cambiado a posición relativa */
+        left: 0; /* Ajustado el left a 0 */
+        margin-bottom: 20px; /* Agregado margen inferior */
+    }
+    .style-text-article {
+        width: 300px;
+    }
+    .main-img{
+        display: none;
+    }
+
+
+
+    
+
+

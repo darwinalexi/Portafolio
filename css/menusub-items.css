@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+nav{
+    background-color: aqua;
+    font-size: 1.3rem;
+    width: 100%;
+}
+
+nav ul{
+    width: 100%;
+    text-align: left;
+    list-style: none;
+    position: absolute;
+    left: 0;
+    background-color: aquamarine;
+}
+/* primer menu */
+.items{
+ margin-left: 50px;
+ display: inline-block;
+}
+.items:hover{
+    background-color: coral;
+}
+.na > ul > li{
+margin: 20px 0;
+display: inline-block;
+width: 250px;
+}
+a{
+    text-decoration: none;
+    color: black
+}
+ul li {
+    position: relative;
+
+}
+/* segundo nivel */
+nav li li {
+    max-height: 0;
+    overflow: hidden;
+}
+nav li:hover > ul > li {    
+    max-height: 500px;
+    overflow: visible;
+    text-align: center;
+    border: 1px solid coral;
+    background-color: aquamarine;
+}
+nav li > ul > li:hover{
+    background-color: coral;
+    cursor: pointer;
+}
+/*3 nivel*/
+nav ul ul ul {
+    left:100%;
+    top: 0%;
+}
