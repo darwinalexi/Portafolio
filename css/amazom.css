@@ -242,7 +242,7 @@ input {
     position: relative;
     left: 200px;
     top:180px;
-    z-index: 100;
+    z-index: 2;
     border-radius: 12px;
     border: #000 1px solid;
     display: flex;
@@ -564,8 +564,8 @@ display: none;
     margin-bottom: 52px;
 }
 .img5 > img{
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
     overflow: hidden;
     object-fit: cover;
     transition: 2s;
@@ -599,5 +599,19 @@ left: 104vh;
 grid-gap: 62px;
 min-width: 200px;
 max-width: 300px;
-
+}
+.titulo{
+    background-color: #C8C8CF;
+    height: 12PC;
+    width: 23PC;
+    top: 10pc;
+    position: relative;
+    left: 100vh;
+    z-index: -1;
+}
+.titulo > h1{
+    margin-left: 0;
+}
+#strart1{
+    color: #000;
 }
