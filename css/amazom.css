@@ -615,3 +615,26 @@ max-width: 300px;
 #strart1{
     color: #000;
 }
+#strart2{
+    color: #000;
+}
+#strart3{
+    color: #000;
+}
+#strart4{
+    color: #000;
+}
+#strart5{
+    color: #000;
+}
+.product > hr{
+    position: relative;
+    top: 30px;
+}
+.product{
+    height: auto;
+}
+.medio{
+    position: relative;
+    bottom: -30px;
+}

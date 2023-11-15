@@ -5,9 +5,6 @@ let  arriba = document.getElementById("arriba")
 let opciones = document.getElementById("items")
 let abajo = document.getElementById("abajo")
 let cerrar = document.getElementById("cerrar")
-cerrar.addEventListener("click", ()=>{
-    alert("lolo")
-})
 
 abajo.addEventListener("click", ()=>{
     if (opciones.classList.contains("itemnull")) {
