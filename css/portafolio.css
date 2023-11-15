@@ -419,7 +419,7 @@ ul{
     height: 36px;
     font-size: 30px;
     color: brown;
-    background-color: transparent;
+    background-color: hsl(182, 48%, 20%);
 }
 .menu > i{
     position: relative;
