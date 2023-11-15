@@ -220,7 +220,7 @@ a:hover{
     text-align: center;
     justify-content: center;
     background-color: aliceblue;
-    z-index: 3;
+    z-index: 4;
      background-color: hsl(182, 48%, 27%);
      box-shadow: 0 20px 35px  grey;
      transition:  all 2s ease;
@@ -286,6 +286,7 @@ li> a{
     background-color: hsl(182, 48%, 27%);
     box-shadow: 0 20px 35px  grey;
     transition:  all 2s ease;
+    z-index: 2;
 }
 .abajo{
     position: absolute;
