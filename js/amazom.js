@@ -1,10 +1,5 @@
 let abrir = document.getElementById("abrir")
 let cerrar = document.getElementById("cerrar")
-
-
-
-
-
 abrir.addEventListener("click", function(){
     let modal=document.getElementById("modal")
      if (modal.classList.contains("ocultar")) {
@@ -38,9 +33,25 @@ let fotos=document.getElementById("fotos")
 let videos=document.getElementById("videos")
 
 
+let fotoscuerpo=document.getElementById("fotos-cuerpo")
 
+videos.addEventListener("click", function(){
+    fotoscuerpo.classList.add("fotos-ocultar")
+    if (imagenp.classList.contains("articulo")) {
+        imagenp.classList.remove("articulo")
+        imagenp.classList.add("imagenprincipal")
+    }
+})
 
+fotos.addEventListener("click",  function(){
+    fotoscuerpo.classList.remove("fotos-ocultar")
+    if (imagenp.classList.contains("imagenprincipal")) {
+        imagenp.classList.remove("imagenprincipal")
+        imagenp.classList.add("articulo")
+    }
+})
 
+//se da estilo a texto y video
 fotos.addEventListener("click", function(){
     let principal=document.getElementById("principal")
     if (fotos.classList.contains("fotos")) {
@@ -52,10 +63,7 @@ fotos.addEventListener("click", function(){
         videos.classList.add("videos")
                 
     }
-    if (principal.classList.contains("main")) {
-        principal.classList.remove("main")
-        principal.classList.add("main-ocultar")
-    }
+
 })
 videos.addEventListener("click", function(){
     if (videos.classList.contains("videos")) {
@@ -92,7 +100,31 @@ imagen5.addEventListener("click", function(){
     imagenp.setAttribute("src","../img/articulo/auroar.jpg")
     caja1.classList.add("imagen3")
 })
+let miniatura1=document.getElementById("mini1")
+let miniatura2=document.getElementById("mini2")
+let miniatura3=document.getElementById("mini3")
+let miniatura4=document.getElementById("mini4")
+let miniatura5=document.getElementById("mini5")
+miniatura1.addEventListener("mousemove", function(){
+    abrir.setAttribute("src","../img/articulo/auroar.jpg")
+    caja1.classList.add("imagen1")
+})
+miniatura2.addEventListener("mousemove", function(){
+    abrir.setAttribute("src","../img/articulo/aurora1.jpg")
+    caja2.classList.add("imagen2")
+})
+miniatura3.addEventListener("mousemove", function(){
+    abrir.setAttribute("src","../img/articulo/aurora3.jpg")
+    caja1.classList.add("imagen3")
+})
+miniatura4.addEventListener("mousemove", function(){
+    abrir.setAttribute("src","../img/articulo/aurora4.jpg")
+    caja1.classList.add("imagen3")
+})
 
-
-
+miniatura5.addEventListener("mousemove", function(){
+   
+    abrir.setAttribute("src","../img/articulo/daurora2.jpg")
+    caja1.classList.add("imagen3")
+})
 

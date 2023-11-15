@@ -4,8 +4,8 @@
     font-family: sans-serif;
 }
 body{
-    min-width: 20%;
-    max-width: 100%;
+    min-width: 500px; /* Ancho mínimo */
+    max-width: 1200px; 
     width: 100%;
 }
 header{
@@ -15,6 +15,7 @@ header{
     min-width: 50%;
     max-width: 100%;
         display: grid; 
+        position: fixed;
 }
 
 .image{
@@ -71,17 +72,17 @@ i{
     cursor: pointer;
 }
 .text{
-position: relative;
-bottom: 10px;
-left: 20px;
-width: auto;
+    position: relative;
+    bottom: 10px;
+    left: 20px;
+    width: auto;
 }
 .text-1{
-position: relative;
-bottom: 10px;
-left: 20px;
-width: auto;
-color: #C8C8CF ;
+    position: relative;
+    bottom: 10px;
+    left: 20px;
+    width: auto;
+    color: #C8C8CF ;
 }
 select{
     height: 25px;
@@ -175,10 +176,8 @@ input {
 .box-1{
     width: 150px;
     height: auto;
-    position: fixed;
-    left: 130vh;
-bottom:700px ;    
-    color: white;
+    color: black;
+
 }
 .box-1:hover{
     border: white 1px solid;
@@ -188,11 +187,11 @@ bottom:700px ;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: aliceblue;
+    
 }
 .box-2{
-    position: fixed;
-    left: 72pc;
-    top: 2pc;
+ 
    color:white;
     width: 100px;
 }
@@ -200,26 +199,24 @@ bottom:700px ;
     border: white 1px solid;
     cursor: pointer;
 }
-.car > i{
-    width: 100px;
-    position: relative;
-    left: 170vh;
-    top: -26vh;
-
+.car  {
     color:wheat;
     height: 8vh;
-}
-.car:hover{
-    border: white 1px solid;
-    cursor: pointer;
-}
-.car  > P{
     color: white;
-  
-
+    width: 20px;
+}
+.car > i{
+   position: relative;
+   left: 23px;
+}
+.car > p{
+    float: right;
 }
 .images{
     background-size:cover;
+    position: absolute;
+    left: 200px;
+    top: 300px;
 }
 .main-content{
     width: 90%;
@@ -227,10 +224,11 @@ bottom:700px ;
     background-color: white;
 }
 .images > img{
-    position: absolute;
-    top: 100px;
     width: 400px;
-    height: 400px;
+    min-width: 200px;
+    max-width: 600px;
+    height: auto;
+    display: flex;
 }
 .images{
     width: 400px;
@@ -238,22 +236,25 @@ bottom:700px ;
     cursor: pointer;
 }
 .modal{
-    width: 60%;
+    width: 100vh;
     height: 420px;
     background-color: white;
     position: relative;
-    left: 300px;
-    bottom: 123px;
+    left: 200px;
+    top:180px;
     z-index: 100;
     border-radius: 12px;
     border: #000 1px solid;
+    display: flex;
+
 }
 .modal > i{
-position: absolute;
-top: 0;
-color: #000;
-cursor: pointer;
-padding: 23px;
+    position: absolute;
+    top: 0;
+    color: #000;
+    cursor: pointer;
+    padding: 23px;
+    z-index: 100;
 }
 .modal >i:hover{
     font-size: 30px;
@@ -263,15 +264,19 @@ padding: 23px;
     display: none;
 }
 .articulo{
-width: 200px;
-height: 200px;
-position: absolute;
-left: 120px;
-top: 10vh;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 120px;
+    top: 10vh;
 }
 .main{
     width: 150%;
+    min-width: 180%;
+    max-width: 200%;
     height: 200px;
+    min-height:200px;
+    max-height: 400px;
     display: grid;
     grid-template-columns: repeat( 2,50%);
     grid-template-rows: repeat(2,50%);
@@ -285,12 +290,15 @@ top: 10vh;
 }
 .imagenes{
     display: grid;
-    grid-template-columns: repeat(3 ,50px);
+    grid-template-columns: repeat(3 ,minmax(4%, 5%));
     grid-template-rows: repeat(2 ,20px);
     grid-gap: 50px;
     position: absolute;
-    top: 35vh;
-    left: 65vh;
+    top: 33vh;
+    left: 35vh;
+    width: 80%;
+    min-width: 50%;
+    max-width: 100%;
 }
 .imagen1{
     width: 90px;
@@ -391,12 +399,19 @@ font-size: 1.3em;
 padding: 12px;
 }
 .imge1   > img{
-width: 300px;
-height: auto;
+    width: 300px;
+    max-width: 300px;
+    min-width: 200px;
+    min-height: 100px;
+    height: 200px;
+    max-width: 200px;
 }
 .imge1{
     position: relative;
     top: 40px;
+    right: 12vh;
+    width: 300px;
+    height: 200px;
     
 }
 .fotos{
@@ -435,6 +450,154 @@ height: auto;
 .imagenes-null{
 display: none;
 }
-.lista{
+.informacion {
+    position: absolute;
+    left: 35vh;
+    width: auto;
+    height: auto;
+}
+.selector{
+    width: auto;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    right: 120vh;
+}
+#fotos{
+ float: left;
+}
+#videos{
+    position: relative;
+    left: 100px;
+}
+.fotos-ocultar{
+    display: none;
+}
+.imagenprincipal{
+    display: none;
+}
+
+.miniaturas{
+    float:left;
+    background-color: #000;
+    width: auto;
+    position: relative;
+    top: 120px;
+    padding-bottom: 100px;
+    z-index: -2;
+
+}
+.img1{
+    margin-bottom: 12px;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 52px;
+}
+
+.img1 > img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /*object-fit: cover;*/
+    transition: 2s;
+}
+.img1 > img:hover{
+    transform: scale(1.3);
+}
+.img2{
+    margin-bottom: 12px;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 52px;
+}
+.img2 > img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    transition: 2s;
+}
+.img2 > img:hover{
+    transform: scale(1.3);
+}
+.img3{
+    margin-bottom: 12px;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 52px;
+}
+.img3 > img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    transition: 2s;
+}
+.img3 > img:hover{
+    transform: scale(1.3);
+}
+.img4{
+    margin-bottom: 12px;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 52px;
+}
+.img4 > img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    transition: 2s;
+}
+.img4 > img:hover{
+    transform: scale(1.3);
+}
+.img5{
+    margin-bottom: 12px;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 52px;
+}
+.img5 > img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    transition: 2s;
+}
+.img5 > img:hover{
+    transform: scale(1.3);
+}
+.descrpcion1{
+   display: grid;
+   grid-template-columns: repeat( 1, auto);
+   grid-template-rows: repeat(2, auto);
+   width: 300px;
+   position: absolute;
+   left: 80vh;
+   top: 100px;
+   min-width:200px;
+   z-index: -2;
+}
+.caracteristicas > p{
+margin-bottom: 12px;
+}
+.main-principal{
+display: grid;
+grid-template-columns: repeat( 4, 120px);
+height: 14px;
+width: 200px;
+top: 12px;
+background-color: #000;
+position: absolute;
+left: 104vh;
+grid-gap: 62px;
+min-width: 200px;
+max-width: 300px;
 
 }
