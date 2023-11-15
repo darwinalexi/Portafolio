@@ -6,6 +6,7 @@ let opciones = document.getElementById("items")
 let abajo = document.getElementById("abajo")
 let cerrar = document.getElementById("cerrar")
 
+
 abajo.addEventListener("click", ()=>{
     if (opciones.classList.contains("itemnull")) {
         opciones.classList.remove("itemnull")
