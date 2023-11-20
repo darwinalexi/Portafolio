@@ -68,7 +68,6 @@ p {
     cursor: pointer;
     width: 250px;
     height: 8px;
-    background-color: transparent;
 }
 
 i {
@@ -146,7 +145,15 @@ p {
     grid-template-columns: repeat( auto-fit, minmax(200px, 1fr));
    grid-gap: 50px;
     width: 70%;
-    padding-top: 23px;
+    padding-bottom: 23px;
+    view-timeline-name: --image;
+    /*se pone en boque o en linea*/
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    /*nombre de la animacion*/
+    animation-name: show;
+    /*se controla la entrada de lña animacion*/
+    animation-range:entry 25% cover 50% ;
 }
 .works{
     width: 250px;
@@ -162,8 +169,26 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-
+      view-timeline-name: --image;
+    /*se pone en boque o en linea*/
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    /*nombre de la animacion*/
+    animation-name: show;
+    /*se controla la entrada de lña animacion*/
+    animation-range:entry 25% cover 50% ;
 }
+/*se crea la animacion show*/
+@keyframes show{
+    from{
+        opacity: 0;
+        scale: 24%;
+    }
+    to{
+        opacity: 1;
+        src: 100%;
+    }
+    }
 
 a> img{
     width: 250px;
@@ -311,6 +336,10 @@ li> a{
 #cerrar{
     display: none;
 }
+.contacto{
+    background-color: aliceblue;
+}
+
 
 @media screen and (max-width: 600px) {
     
