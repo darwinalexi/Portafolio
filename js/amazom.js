@@ -21,11 +21,16 @@ let imagen3=document.getElementById("imagen3")
 let imagen4=document.getElementById("imagen4")
 let imagen5=document.getElementById("imagen5")
 
+
+
 let caja1=document.getElementById("box-imagen1")
 let caja2=document.getElementById("box-imagen2")
 let caja3=document.getElementById("box-imagen3")
 let caja4=document.getElementById("box-imagen4")
 let caja5=document.getElementById("box-imagen5")
+let caja6=document.getElementById("box-imagen6")
+let caja7=document.getElementById("box-imagen7")
+let caja8=document.getElementById("box-imagen8")
 
 let imagenp=document.getElementById("imagen-principal")
 
@@ -126,5 +131,20 @@ miniatura5.addEventListener("mousemove", function(){
    
     abrir.setAttribute("src","../img/articulo/daurora2.jpg")
     caja1.classList.add("imagen3")
+})
+
+let muestra1=document.getElementById("muestra1")
+let muestra2=document.getElementById("muestra2")
+let muestra3=document.getElementById("muestra3")
+
+muestra1.addEventListener("mousemove", () =>{
+    abrir.setAttribute("src","../img/articulo/muestra1.jpg")
+})
+muestra2.addEventListener("mousemove", ()=>{
+abrir.setAttribute("src","../img/articulo/muestra2.jpg")
+})
+
+muestra3.addEventListener("mousemove", ()=>{
+    abrir.setAttribute("src","../img/articulo/muestra3.jpg")
 })
 
