@@ -148,3 +148,12 @@ muestra3.addEventListener("mousemove", ()=>{
     abrir.setAttribute("src","../img/articulo/muestra3.jpg")
 })
 
+let estrella1=document.getElementById("estrella1")
+let estrella2=document.getElementById("estrella2")
+let estrella3=document.getElementById("estrella3")
+let estrella4=document.getElementById("estrella4")
+let estrella5=document.getElementById("estrella5")
+
+let puntos = 5
+let valor = document.getElementById("valor")
+valor.innerHTML="Estrellas "+puntos
