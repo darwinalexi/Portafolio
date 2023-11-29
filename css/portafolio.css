@@ -329,15 +329,7 @@ li> a{
 .contacto{
     background-color: aliceblue;
 }
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> 9e3f198cc4b47b15342f86562b85f81c2a953f95
-
->>>>>>> ddfd51313f9b2d74a14f7d5f8ed13e085578dd08
 .rueda{
     background-color: brown;
     width: 50px;
@@ -370,12 +362,12 @@ li> a{
 .fa-github{
     position: absolute;
     left: -20%;
-    top: 76%;
+    top: 80%;
     background-color: hsl(182, 48%, 27%);
 }
 .git{
     position: absolute;
-    top: 72%;
+    top: 76%;
     left: 12%;
     width: 200px;
     background-color: hsl(182, 48%, 27%);
