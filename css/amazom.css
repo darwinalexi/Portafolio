@@ -3,9 +3,7 @@
     padding: 0;
     font-family: sans-serif;
 }
-body{
-    min-width: 500px; /* Ancho mínimo */
-    max-width: 1200px; 
+body{ 
     width: 100%;
 }
 header{
@@ -16,6 +14,7 @@ header{
     max-width: 100%;
         display: grid; 
         position: fixed;
+        z-index: 2;
 }
 
 .image{
@@ -204,6 +203,7 @@ input {
     height: 8vh;
     color: white;
     width: 20px;
+    float: right;
 }
 .car > i{
    position: relative;
@@ -215,8 +215,9 @@ input {
 .images{
     background-size:cover;
     position: absolute;
-    left: 200px;
-    top: 300px;
+    left: 6%;
+    top: 23%;
+    
 }
 .main-content{
     width: 90%;
@@ -224,24 +225,22 @@ input {
     background-color: white;
 }
 .images > img{
-    width: 400px;
-    min-width: 200px;
-    max-width: 600px;
+    width: 100%;
     height: auto;
-    display: flex;
+    border-radius: 12px;
 }
 .images{
-    width: 400px;
-    height: 200px;
+    width: 30%;
+    height: 20%;
     cursor: pointer;
 }
 .modal{
-    width: 100vh;
-    height: 420px;
+    width: 70%;
+    height: 500px;
     background-color: white;
-    position: relative;
+    position:absolute;
     left: 200px;
-    top:180px;
+    top:23%;
     z-index: 2;
     border-radius: 12px;
     border: #000 1px solid;
@@ -264,16 +263,15 @@ input {
     display: none;
 }
 .articulo{
-    width: 200px;
-    height: 200px;
+    width:100%;
+    height: 100%;
     position: absolute;
     left: 120px;
     top: 10vh;
 }
 .main{
-    width: 150%;
-    min-width: 180%;
-    max-width: 200%;
+    width: 80%;
+ 
     height: 200px;
     min-height:200px;
     max-height: 400px;
@@ -290,13 +288,13 @@ input {
 }
 .imagenes{
     display: grid;
-    grid-template-columns: repeat(3 ,minmax(4%, 5%));
+    grid-template-columns: repeat(4,minmax(4%, 5%));
     grid-template-rows: repeat(2 ,20px);
-    grid-gap: 50px;
+    grid-gap: 78px;
     position: absolute;
-    top: 33vh;
-    left: 35vh;
-    width: 80%;
+    top: 38vh;
+    left: 53%;
+    width: 20%;
     min-width: 50%;
     max-width: 100%;
 }
@@ -312,6 +310,7 @@ input {
 
     position: static;
     border: 6px black solid;
+    
 
 }
 .imagen1:hover{
@@ -387,6 +386,45 @@ input {
     box-shadow: 6px 7px 12px 6px black;
    }
 
+.imagen6{
+    width: 90px;
+    height: 60px;
+    border: 12px black;
+    cursor: pointer;
+   }
+.imagen6 > img{
+    width: 80px;
+    height: 50px;
+
+    position: static;
+    border: 6px black solid;
+   }
+.imagen7{
+    width: 90px;
+    height: 60px;
+    border: 12px black;
+    cursor: pointer;
+   }
+.imagen7 > img{
+    width: 80px;
+    height: 50px;
+
+    position: static;
+    border: 6px black solid;
+   }
+.imagen8{
+    width: 90px;
+    height: 60px;
+    border: 12px black;
+    cursor: pointer;
+   }
+.imagen8 > img{
+    width: 80px;
+    height: 50px;
+
+    position: static;
+    border: 6px black solid;
+   }
 li{
     list-style: none;
 }
@@ -399,20 +437,22 @@ font-size: 1.3em;
 padding: 12px;
 }
 .imge1   > img{
-    width: 300px;
-    max-width: 300px;
-    min-width: 200px;
-    min-height: 100px;
-    height: 200px;
-    max-width: 200px;
+    width: 100%;
+    height: 100%;
+
+    z-index: -2;
+    border-radius: 12px;
 }
 .imge1{
-    position: relative;
-    top: 40px;
+    position: absolute;
+    top: 40%;
+    left: -7%;
     right: 12vh;
     width: 300px;
-    height: 200px;
-    
+    height: 150px;
+    min-height: 200px;
+    max-height: 500px;
+
 }
 .fotos{
     cursor: pointer;
@@ -452,8 +492,8 @@ display: none;
 }
 .informacion {
     position: absolute;
-    left: 35vh;
-    width: auto;
+    left: 59%;
+    width: 350px;
     height: auto;
 }
 .selector{
@@ -461,7 +501,8 @@ display: none;
     height: 10px;
     position: absolute;
     top: 0;
-    right: 120vh;
+    right:-6vh;
+    margin-right: 8%;
 }
 #fotos{
  float: left;
@@ -479,28 +520,29 @@ display: none;
 
 .miniaturas{
     float:left;
-    background-color: #000;
     width: auto;
-    position: relative;
-    top: 120px;
-    padding-bottom: 100px;
+    padding-top: 10%;
+    width: 2%;
     z-index: -2;
 
 }
 .img1{
-    margin-bottom: 12px;
     cursor: pointer;
-    width: 100px;
-    height: 100px;
-    margin-bottom: 52px;
+    width: 80px;
+    height: 80px;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .img1 > img{
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: auto;
     overflow: hidden;
-    /*object-fit: cover;*/
+    object-fit: cover;
     transition: 2s;
+    border-radius: 5px;
+    border: 2px brown solid;
+    
+    
 }
 .img1 > img:hover{
     transform: scale(1.3);
@@ -508,16 +550,19 @@ display: none;
 .img2{
     margin-bottom: 12px;
     cursor: pointer;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     margin-bottom: 52px;
+    border-radius: 12px;
 }
 .img2 > img{
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     overflow: hidden;
     object-fit: cover;
     transition: 2s;
+    border-radius: 5px;
+    border: 2px brown solid;
 }
 .img2 > img:hover{
     transform: scale(1.3);
@@ -525,16 +570,18 @@ display: none;
 .img3{
     margin-bottom: 12px;
     cursor: pointer;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     margin-bottom: 52px;
 }
 .img3 > img{
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     overflow: hidden;
     object-fit: cover;
     transition: 2s;
+    border-radius: 5px;
+    border: 2px brown solid;
 }
 .img3 > img:hover{
     transform: scale(1.3);
@@ -542,16 +589,18 @@ display: none;
 .img4{
     margin-bottom: 12px;
     cursor: pointer;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     margin-bottom: 52px;
 }
 .img4 > img{
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     overflow: hidden;
     object-fit: cover;
     transition: 2s;
+    border-radius: 5px;
+    border: 2px brown solid;
 }
 .img4 > img:hover{
     transform: scale(1.3);
@@ -559,16 +608,18 @@ display: none;
 .img5{
     margin-bottom: 12px;
     cursor: pointer;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     margin-bottom: 52px;
 }
 .img5 > img{
-    width: 50%;
-    height: 50%;
+    width: 80%;
+    height: 80%;
     overflow: hidden;
     object-fit: cover;
     transition: 2s;
+    border-radius: 5px;
+    border: 2px brown solid;
 }
 .img5 > img:hover{
     transform: scale(1.3);
@@ -595,19 +646,20 @@ width: 200px;
 top: 12px;
 background-color: #000;
 position: absolute;
-left: 104vh;
-grid-gap: 62px;
+left:55%;
+grid-gap: 45px;
 min-width: 200px;
 max-width: 300px;
 }
 .titulo{
-    background-color: #C8C8CF;
-    height: 12PC;
-    width: 23PC;
+    height: auto;
+    min-width: 50%;
+    width: 170%;
     top: 10pc;
     position: relative;
-    left: 100vh;
+    left:0;
     z-index: -1;
+    margin-left: 23px;
 }
 .titulo > h1{
     margin-left: 0;
@@ -637,4 +689,345 @@ max-width: 300px;
 .medio{
     position: relative;
     bottom: -30px;
+}
+
+.subheader{
+background-color:#07093B ;
+position: fixed;
+top: 70px;
+width: 100%;
+height: 40px;
+display: flex;
+flex-direction: row;
+z-index: 3;
+}
+.subheader > p{
+    margin-right: 12px;
+    margin-top: 12px;
+    cursor: pointer;
+    color: aliceblue;
+}
+.subheader > i{
+    color: aliceblue;
+    margin-top: -20px;
+    margin-left: 12px;
+    font-size: 25px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 240px);
+   position: relative;
+    top: 12%;
+    left: 37%;
+    margin-right: 23vh;
+    width: 32%;
+}
+.extra{
+    border-radius: 12px;
+    border:2px solid gray;
+    position: relative;
+    left: 90%;
+    top: 16vh;
+    height: 100vh;
+    width: 300px;
+}
+.extra > p{
+    width: 200px;
+    padding-left: 12px;
+}
+.extra > i{
+    color: #000;
+    position: absolute;
+    left: 34%;
+    top: 17%;
+    font-size: 89%;
+    font-weight: 25%;
+    cursor: pointer;
+}
+.extra > h1{
+    padding-left: 12px;
+    padding-top: 12px;
+}
+.extra > select{
+    position: absolute;
+    top: 270px;
+    margin-left: 12px;
+    border-radius: 5px;
+}
+.enviar{
+    position: absolute;
+    left: 34px;
+    padding: 12px;
+    color: #07093B;
+    cursor: pointer;
+}
+.enviar:hover{
+    text-decoration: underline;
+}
+.extra >.fa-location-dot{
+    color:#07093B;
+    position: absolute;
+    font-size: 1.0em;
+    top:205px;
+    left:18px;
+    padding-right: 12px;
+    cursor: pointer;
+}
+.disponible{
+    padding-top: 12px;
+    position: absolute;
+    top: 224px;
+    color: #07093B;
+}
+.btn1{
+    position: absolute;
+    top: 300px;
+    margin-left:12px ;
+    width: 270px;
+    background-color: #EEF516;
+    border-radius: 12px;
+    height: 30px;
+    cursor: pointer;
+}
+.btn1:hover{
+    background-color: hsl(56, 92%, 52%);
+}
+.btn2{
+    position: absolute;
+    top:350px;
+    width: 270px;
+    height: 30px;
+    margin-left:12px ;
+    background-color: #ECA116 ;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.btn2:hover{
+    background-color: #D18A07 ;
+}
+.txt1{
+    position: absolute;
+    top: 390px;
+}
+.txt2{
+    position: absolute;
+    top: 420px;
+}
+
+.txt3{
+    position: absolute;
+    top: 420px;
+    left: 100px;
+    width: 78px;
+    cursor: pointer;
+    font-size: 12px;
+}
+.txt3:hover{
+    text-decoration: underline;
+}
+.txt4{
+    position: absolute;
+    top: 470px;
+}
+.txt5{
+    position: absolute;
+    top: 470px;
+    left: 108px;
+    font-size: 12px;
+    cursor: pointer;
+    color: #07093B;
+}
+.txt5:hover{
+    text-decoration: underline;
+}
+.txt6{
+    position: absolute;
+    top: 500px;
+
+}
+.txt7{
+    position: absolute;
+    top: 500px;
+    left: 100px;
+}
+.masfotos{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    position: absolute;
+    grid-gap: 2px;
+    top: 190%;
+    left: 5%;
+    width: 10%;
+    margin-top: 34%;
+    z-index: 100;
+
+}
+.muestra1 > img{
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 100;
+}
+.muestra1 > img:hover{
+    border: 2px brown solid;
+}
+.muestra2 > img{
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.muestra2 > img:hover{
+   
+    border: 2px brown solid;
+}
+
+.muestra3 > img{
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    margin-bottom: 23px;
+}
+.muestra3 > img:hover{
+    border: 2px brown solid;
+}
+.calificacion{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 104%;
+    width: 200px;
+    height: 21%;
+}
+  .estrella{
+    color: #ECA116;
+  }
+  .calificacion > i{
+
+    color: #000;
+  }
+  #valor{
+    position: absolute;
+    top: 80%;
+    left: 66%;
+    z-index: 1;
+    width: auto;
+  }
+  #valor:hover{
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .masfotos > hr{
+   z-index: 1;
+   width: 300%;
+   margin-left:
+    12px;
+  }
+  h4{
+    position: absolute;
+    top: 140%;
+  }
+  .cl{
+    position: absolute;
+    top: 150%;
+    height: 10%;
+  }
+  .ver{
+    position: absolute;
+    top: 80%;
+    color: #07093B;
+    &:hover{
+        text-decoration: underline;
+        color: #07093B;
+        cursor: pointer;
+    }
+  }
+  #segundo{
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    &:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+  }
+  #abajo{
+    position: absolute;
+    top: 70%;
+    left: 5%;
+  }
+  .soporte{
+    position: absolute;
+    top: 75%;
+  }
+  .soporte1{
+    position: absolute;
+    top: 75%;
+    left: 33%;
+  }
+  .desaparecer{
+display: none;
+  }
+  .verm{
+    position: absolute;
+    top: 90%;
+    left: 1%;
+    color: #07093B;
+    &:hover{
+        text-decoration: underline;
+        color: #07093B;
+        cursor: pointer;
+    }
+  }
+@media screen and (max-width: 700px) {
+ .descripcionoriginal{
+    position: relative;
+    top: 80vh;
+    left: 100px;
+ }
+ .miniaturas{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+ }
+ .img1{
+    width: 100px;
+    height: auto;
+    margin: 10px;
+ }
+ .img2{
+    margin: 10px;
+    width: 100px;
+    height: auto;
+ }
+ .img3{
+    margin: 10px;
+    width: 100px;
+    height: auto;
+ }
+ .img4{
+    margin: 10px;
+    width: 100px;
+    height: auto;
+ }
+ .img5{
+    margin: 10px;
+    width: 100px;
+    height: auto;
+ }
+ .images{
+    width: 200px;
+    height: 200px;
+    z-index: -2;
+    position: absolute;
+    left: 20%;
+ }
+ .images > img{
+    width: 100%;
+    height: auto;
+ }
 }

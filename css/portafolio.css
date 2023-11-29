@@ -6,12 +6,12 @@
   
 }
 
-
 .box-null {
     position: fixed;
-    left: -302px;
+    left: -362px;
     transition: all 2s ease;
     height: 100%;
+    z-index: 1;
 }
 .box{
     width: 295px;
@@ -68,7 +68,8 @@ p {
     cursor: pointer;
     width: 250px;
     height: 8px;
-    background-color: transparent;
+    background-color: hsl(182, 48%, 27%);
+    color: brown;
 }
 
 i {
@@ -141,12 +142,20 @@ p {
     position: absolute;
     right: 400px;
     left: 296px;
-    top: 150vh;
+    top: 130vh;
     display: grid;
     grid-template-columns: repeat( auto-fit, minmax(200px, 1fr));
    grid-gap: 50px;
     width: 70%;
-    padding-top: 23px;
+    padding-bottom: 23px;
+    view-timeline-name: --image;
+    /*se pone en boque o en linea*/
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    /*nombre de la animacion*/
+    animation-name: show;
+    /*se controla la entrada de lña animacion*/
+    animation-range:entry 25% cover 50% ;
 }
 .works{
     width: 250px;
@@ -162,8 +171,27 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+      view-timeline-name: --image;
+    /*se pone en boque o en linea*/
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    /*nombre de la animacion*/
+    animation-name: show;
+    /*se controla la entrada de lña animacion*/
+    animation-range:entry 25% cover 50% ;
 
 }
+/*se crea la animacion show*/
+@keyframes show{
+    from{
+        opacity: 0;
+        scale: 24%;
+    }
+    to{
+        opacity: 1;
+        src: 100%;
+    }
+    }
 
 a> img{
     width: 250px;
@@ -183,8 +211,8 @@ a{
     text-decoration: none;
     width: 20px;
     height: 10px;
-    background-color: brown;
     color: black;
+    background-color: hsl(182, 48%, 27%);
 }
 a:hover{
     background-color: hsl(182, 48%, 27%);
@@ -220,7 +248,7 @@ a:hover{
     text-align: center;
     justify-content: center;
     background-color: aliceblue;
-    z-index: 4;
+    z-index: 1;
      background-color: hsl(182, 48%, 27%);
      box-shadow: 0 20px 35px  grey;
      transition:  all 2s ease;
@@ -229,12 +257,14 @@ ul{
     background-color: none;
     display: flex;
     list-style: none;
+    position: relative;
+    left: -15%;
 }
 li{
     background-color: hsl(182, 48%, 27%);
     float: left;
     position: relative;
-    right: 100px;
+    right: 50px;
 }
 li> a{
     position: relative;
@@ -263,17 +293,7 @@ li> a{
     background-color: antiquewhite;
     z-index: 5;
 }
-#arriba{
-    position: absolute;
-    top: 0;
-     left: 320px;
-    z-index: 100;
-    width: 12px;
-    height: 12px;
-    font-size: 1.8em;
-    background-color: transparent;
-    padding-top: 12px;
-}
+
 .itemnull{
     width: 100%;
     position: fixed;
@@ -288,30 +308,57 @@ li> a{
     transition:  all 2s ease;
     z-index: 2;
 }
-.abajo{
-    position: absolute;
-    top: 0;
-    width: 2px;
-    height: 12px;
-    left: 80vh;
-    margin-right: 0;
-    z-index: -100;
-  
-}
-.abajo > i{
-    position: absolute;
-    top: 0;
-    width: 2px;
-    height: 12px;
-    z-index: -100;
-    padding-top: 7px;
-    font-size: 1.8em;
 
-}
 #cerrar{
     display: none;
 }
+.contacto{
+    background-color: aliceblue;
+}
 
+.rueda{
+    background-color: brown;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    position: absolute;
+    top: 0%;
+    z-index: 2;
+    transition: all 2s ease;
+}
+.rueda1{
+    position: absolute;
+    top: 50%;
+    background-color: brown;
+    width: 50px;
+    height: 50px;
+    border-radius: 80%;
+    transition: all 2s ease;
+}
+.encendedor{
+    float: right;
+    width: 50px;
+    height: 70px;
+    position: fixed;
+    left: 95%;
+    border-radius:22px ;
+    z-index: 2;
+    cursor: pointer;
+}
+.fa-github{
+    position: absolute;
+    left: -20%;
+    top: 76%;
+    background-color: hsl(182, 48%, 27%);
+}
+.git{
+    position: absolute;
+    top: 72%;
+    left: 12%;
+    width: 200px;
+    background-color: hsl(182, 48%, 27%);
+    transition: all 2s ease;
+}
 @media screen and (max-width: 600px) {
     
     .item{
@@ -444,9 +491,7 @@ ul{
 }
 
 
-#arriba{
- display: none;
-}
+
 #profesion{
     display: none;
 }
