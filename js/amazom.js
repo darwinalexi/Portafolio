@@ -23,6 +23,11 @@ let imagen5=document.getElementById("imagen5")
 let imagen6=document.getElementById("imagen6")
 let imagen7=document.getElementById("imagen7")
 let imagen8=document.getElementById("imagen8")
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> ddfd51313f9b2d74a14f7d5f8ed13e085578dd08
 
 let caja1=document.getElementById("box-imagen1")
 let caja2=document.getElementById("box-imagen2")
@@ -159,3 +164,18 @@ muestra3.addEventListener("mousemove", ()=>{
     abrir.setAttribute("src","../img/articulo/muestra3.jpg")
 })
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+let estrella1=document.getElementById("estrella1")
+let estrella2=document.getElementById("estrella2")
+let estrella3=document.getElementById("estrella3")
+let estrella4=document.getElementById("estrella4")
+let estrella5=document.getElementById("estrella5")
+
+let puntos = 5
+let valor = document.getElementById("valor")
+valor.innerHTML="Estrellas "+puntos
+>>>>>>> 9e3f198cc4b47b15342f86562b85f81c2a953f95
+>>>>>>> ddfd51313f9b2d74a14f7d5f8ed13e085578dd08
