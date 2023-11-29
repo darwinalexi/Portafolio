@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.puntos{
+    display: block;
+}
+.star{
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    position: relative;
+    top: 10px;
+}
+.btn{
+    color: orange;
+}
+
+button{
+    position: relative;
+    top: 233px;
+}

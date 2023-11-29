@@ -68,8 +68,11 @@ p {
     cursor: pointer;
     width: 250px;
     height: 8px;
+<<<<<<< HEAD
     background-color: hsl(182, 48%, 27%);
     color: brown;
+=======
+>>>>>>> 9e3f198cc4b47b15342f86562b85f81c2a953f95
 }
 
 i {
@@ -179,7 +182,10 @@ p {
     animation-name: show;
     /*se controla la entrada de lña animacion*/
     animation-range:entry 25% cover 50% ;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9e3f198cc4b47b15342f86562b85f81c2a953f95
 }
 /*se crea la animacion show*/
 @keyframes show{
@@ -315,6 +321,10 @@ li> a{
 .contacto{
     background-color: aliceblue;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9e3f198cc4b47b15342f86562b85f81c2a953f95
 
 .rueda{
     background-color: brown;
