@@ -5,10 +5,9 @@ body{
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
-    background-attachment: fixed;
-    
+    background-attachment: fixed;   
 }
-  
+
 body::before{
     content: "";
     background: black;
@@ -21,77 +20,46 @@ body::before{
     opacity: 0.2;
    }
 
-   p{
+p{
     text-align: center;
     position: relative;
     color: white;
 }
+
+@font-face{
+  font-family:"disney";
+  src: url(../fuentes/fuentes\ de\ disney/disney.ttf);
+  src: url(../fuentes/fuentes\ de\ disney/waltograph42.otf);
+}
+
+@font-face{
+  font-family: "game";
+  src: url(../fuentes/fuentes\ \ de\ tronos/Game_of_Thrones.ttf);
+}
+
 ul{
     color:white;
-    position: relative;
-    left: 10px;
-
-
 }
-h1{
 
-    color: rgb(228, 16, 16);
-    position: relative;
-    text-align: center;
-}
-h2{
-   font-family: 'Courier New', Courier, monospace;
-   font-size: 20px;
-   text-align: center;
-   position: relative;
-   color: red;
-}
 .box1{
-  width: 200px;
-  height: auto;
-  margin: 3px;
-  float: left;
-  position: relative;
-  left: 150px;
- 
+  width: 80%;
+  height: 100%;
+}
 
+h1{
+    color: rgb(228, 16, 16);
+    font-family: game;
 }
-.box2{
-    margin: 5px;
-    position: relative;
-    left: 300px;
-    width: 200px;
-  height: auto;
-    float: left;
 
+h2{
+   display: flex;
+   justify-content: center;
+   color: red;
+   font-family: disney;
 }
-.box3{
-    margin: 5px;
-    position: relative;
-    left: 500px;
-    width: 200px;
-  height: auto;
-    float: left;
-    
-}
-.box4{
-    margin: 5px;
-    position: relative;
-    left: 700px;
-  float:left;
-  width: 200px;
-  height: auto;
-}
-.box5 {
-    margin: 5px;
-    right: 100px;
-    width: 200px;
-    position: relative;
-    left: 700px;
-}
+
 a {
   display: block;
-  width: 100px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
   border-radius: 10px;
@@ -101,8 +69,29 @@ a {
   color: #fff;
   text-decoration: none;
 }
+
 a:hover {
   background-color: transparent;
   border: 2px solid rgb(240, 181, 105);
   color: rgb(240, 181, 105);
 }
+
+.box{
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(200px, 1fr));
+  width: 90%;
+  gap: 6%;
+  height: 100%;
+  position: absolute;
+  left: 6%;
+}
+
+.titulo{
+  grid-column: 1/-1;
+}
+
+.titulo > h1{
+  display: flex;
+  justify-content: center; 
+}
+

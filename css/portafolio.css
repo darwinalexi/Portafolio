@@ -64,16 +64,18 @@ p {
 .darwin{
     position: relative;
     top: 280px;
-    left: -6px;
+    left: 6%;
     cursor: pointer;
-    width: 250px;
-    height: 8px;
-    background-color: hsl(182, 48%, 27%);
-    color: brown;
-    background-color: hsl(182, 48%, 27%);
-    color: brown;
+    width: 200px;
+    height: auto;
+    color: black;
+    z-index: -6;
+    background-color: transparent;
 }
+.darwin > a{
+    background-color: brown;
 
+}
 i {
     color: #000;
     font-size: 40px;
@@ -88,6 +90,7 @@ i {
 .main-box {
     position: relative;
     bottom: 400px;
+    left: 20%;
     display: flex;
 }
 
@@ -140,6 +143,7 @@ p {
     height: auto;
     
 }
+
 .work{
     position: absolute;
     right: 400px;
@@ -147,7 +151,7 @@ p {
     top: 130vh;
     display: grid;
     grid-template-columns: repeat( auto-fit, minmax(200px, 1fr));
-   grid-gap: 50px;
+    grid-gap: 50px;
     width: 70%;
     padding-bottom: 23px;
     view-timeline-name: --image;
@@ -159,11 +163,13 @@ p {
     /*se controla la entrada de lña animacion*/
     animation-range:entry 25% cover 50% ;
 }
+
 .works{
     width: 250px;
     height: 270px;
     display: block;
 }
+
 .title{
     grid-column: 1/-1;
     grid-row: 1;
@@ -198,12 +204,14 @@ a> img{
     width: 250px;
     height: 250px;
 }
+
 a >img:hover{
     width: 250px;
     height: 250px;
     border: 12px black solid;
     transition: all 1.5s ;
 }
+
 a{
     margin: 14px;
     width: 67%;
@@ -215,12 +223,14 @@ a{
     color: black;
     background-color: hsl(182, 48%, 27%);
 }
+
 a:hover{
     background-color: hsl(182, 48%, 27%);
     
     opacity: 0.2px;
     width: 78px;
 }
+
 .DARWIN{
     position: relative;
     top: 270px;
@@ -231,6 +241,7 @@ a:hover{
     z-index: 1;
     bottom: 230px;
 }
+
 .darwin1{
     position: relative;
     left: -6px;
@@ -241,6 +252,7 @@ a:hover{
     bottom: -250px;
     z-index: 2;
 }
+
 .item{
     width: 100%;
     position: fixed;
@@ -254,6 +266,7 @@ a:hover{
      box-shadow: 0 20px 35px  grey;
      transition:  all 2s ease;
 }
+
 ul{
     background-color: none;
     display: flex;
@@ -261,12 +274,14 @@ ul{
     position: relative;
     left: -15%;
 }
+
 li{
     background-color: hsl(182, 48%, 27%);
     float: left;
     position: relative;
     right: 50px;
 }
+
 li> a{
     position: relative;
     left: 750px;
@@ -277,6 +292,7 @@ li> a{
     background-color: hsl(182, 48%, 27%);
     
 }  
+
  .fa-bars {
     position: absolute;
     left:10px;
@@ -288,6 +304,7 @@ li> a{
     color: brown;
     background-color: transparent;
 }
+
 .menu{
     position: fixed;
     left: 0px;
@@ -346,9 +363,12 @@ li> a{
     z-index: 2;
     cursor: pointer;
 }
+html{
+    scroll-behavior: smooth;
+}
 .fa-github{
     position: absolute;
-    left: -20%;
+    left: -50%;
     top: 80%;
     background-color: hsl(182, 48%, 27%);
 }
@@ -357,8 +377,14 @@ li> a{
     top: 76%;
     left: 12%;
     width: 200px;
-    background-color: hsl(182, 48%, 27%);
+    background-color: transparent;
     transition: all 2s ease;
+}
+.git > p{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    background-color: transparent;
 }
 @media screen and (max-width: 600px) {
     
@@ -490,9 +516,6 @@ ul{
     font-size: 0.9em;
     padding-left: 2vh;
 }
-
-
-
 #profesion{
     display: none;
 }

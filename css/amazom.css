@@ -12,44 +12,62 @@ header{
     width :100%;
     min-width: 50%;
     max-width: 100%;
-        display: grid; 
-        position: fixed;
-        z-index: 2;
+    display: grid; 
+    position: fixed;
+    top: 0;
+    z-index: 7;
 }
 
 .image{
-    position: relative;
+    position: fixed;
     left: 12px;
     top: 9px;
-    width: 140px;
-    height: 60px;
-    
+    width: 8%;
+    height: 7%;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(2, 50%);
+}
+#fa-star{
+color:  orange;
 }
 img{
     width: 60px;
     height: 20px;
     position: relative;
     left: 30px;
-
-
+}
+.nombre{
+    color: #ffff;
+    display: flex;
+    justify-content: center;
+    font-size: 1.6em;
+    margin-bottom: 2%;
+    z-index: 2;
+}
+.nombre > p{
+    font-family: amazon;
+}
+.logo{
+    width: 100%;
+    height: 100%;
+}
+.logo > img{
+    width: 80%;
+    height: 80%;
+    position: relative;
+    left: 11%;
 }
 @font-face{
     font-family: amazon;
     src: url(../fuentes/fuentedeamazon/itc-officina-sans-bold.otf);
 }
-.image > .name{
-    color: white;
-    position: relative;
-    top: 5px;
-    left: 15px;
-    z-index: 2;
-    font-family:amazon;
-    font-size: 1.9em;
-}
+
 .image:hover{
     border: #C8C8CF 1px solid;
     cursor: pointer;
 }
+
 i{
     color:white;
     font-size: 22px;
@@ -58,31 +76,40 @@ i{
 }
 .mas{
     color: white;
-    position: relative;
-    bottom: 50px;
-    left: 10em;
-    width: 100px;
+    position: fixed;
+    top:9px;
+    left: 8em;
+    width:8%;
     height: 60px;
+    display: flex;
+    flex-direction: row;
+
+}
+.logo_location{
+    width: 20%;
+    height: 100%;
 }
 .mas:hover{
     border: #C8C8CF 1px solid;
-    width: 100px;
-    height: 60px;
     cursor: pointer;
 }
-.text{
-    position: relative;
-    bottom: 10px;
-    left: 20px;
-    width: auto;
+.mas >i{
+    margin-top: 3%;
 }
-.text-1{
+.tex{
     position: relative;
-    bottom: 10px;
-    left: 20px;
+    top:10%;
+    margin-left: 2%;
     width: auto;
-    color: #C8C8CF ;
+    height: 100%;
 }
+.text >p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 23PX;
+}
+
 select{
     height: 25px;
    background-color: #B2B2BD ;
@@ -94,8 +121,8 @@ select:focus{
 
 .sarch {
     position: relative;
-    left: 264px;
-    bottom: 90px;
+    top: 3%;
+    left: 0;
     width: 650px;
     display: grid;
    /* grid-template-columns:"   select                   input                        lupa                            bandera                 box-1                   box-2                   car"/
@@ -104,7 +131,9 @@ select:focus{
     max-width: 100%;
     min-width: 40%;
     margin-right: 0px;
-     
+}
+.sarch > select{
+height: 100%;
 }
 
 input {
@@ -121,27 +150,28 @@ input {
     outline: none;
 }
 .lupa {
-    position: relative; 
-    top: -48px;
-    left:90% ;
+    position: absolute; 
+    top:0;
+    left:96% ;
     flex: 1 0 140px;
     background-color: orange;
-    width: 40px;
-    height: 25px;
+    width: 30px;
+    height: 100%;
     z-index: 1;
     display: flex;
     justify-content: center; 
     align-items: center; 
     float: right;
+    cursor: pointer;
     border-top-right-radius:12px;
     /*border-top-left-radius:12px;*/
     border-bottom-right-radius:12px;
 }
 #lupas {
     position: absolute;
-    top: 2px;
     left: 6px;
-    color: #000;
+    top: 30%;
+    color:#000;
     font-size:20px;
     z-index: 1;
     display: flex;
@@ -150,10 +180,11 @@ input {
 }
 .bandera{
     position: relative;
-    left: 56pc;
-    bottom: 170px;
+    top: 4%;
+    left: 23%;
     width: 72px;
-    height: 45px;
+    height: 80%;
+    z-index: 5;
 }
 .bandera:hover{
     border: white 1px solid;
@@ -163,18 +194,19 @@ input {
     width: 25px;
     height: 20px;
     position: relative;
-    bottom: -10px;
+    top: 30%;
     left: 5px;
 }
 .bandera > p{
     color: wheat;
-    position: relative;
-    left:35px;
-    bottom: 12px;
+    margin-left: 50%;
+   
+    display: flex;
+    align-items: center;
 }
 .box-1{
-    width: 150px;
-    height: auto;
+    width: 100px;
+    height: 60px;
     color: black;
 
 }
@@ -187,37 +219,55 @@ input {
     justify-content: center;
     align-items: center;
     color: aliceblue;
-    
+    font-size:12px ;
+    height: 100%;
+    width: 100%;
+    margin-left: 6%;
 }
 .box-2{
- 
    color:white;
     width: 100px;
+    height: 60px;
 }
 .box-2:hover{
     border: white 1px solid;
     cursor: pointer;
 }
+.box-2 > p{
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-left: 6%;
+}
 .car  {
-    color:wheat;
     height: 8vh;
+    width: 70%;
     color: white;
-    width: 20px;
+    height: 60px;
     float: right;
+}
+.car:hover{
+    border: 1px solid #fff;
 }
 .car > i{
    position: relative;
-   left: 23px;
+   left: 0;
 }
 .car > p{
-    float: right;
+    position: relative;
+    left: 40%;
+    bottom: 0;
 }
 .images{
     background-size:cover;
     position: absolute;
-    left: 6%;
+    left: 7%;
     top: 23%;
-    
+    width: 27%;
+    height: 20%;
+    cursor: pointer;
 }
 .main-content{
     width: 90%;
@@ -229,17 +279,12 @@ input {
     height: auto;
     border-radius: 12px;
 }
-.images{
-    width: 30%;
-    height: 20%;
-    cursor: pointer;
-}
 .modal{
     width: 70%;
-    height: 500px;
+    height: 73%;
     background-color: white;
-    position:absolute;
-    left: 200px;
+    position:fixed;
+    left: 20%;
     top:23%;
     z-index: 2;
     border-radius: 12px;
@@ -264,7 +309,7 @@ input {
 }
 .articulo{
     width:100%;
-    height: 100%;
+    height:auto;
     width:100%;
     height: 100%;
 
@@ -277,7 +322,6 @@ input {
 }
 .main{
     width: 80%;
- 
     height: 200px;
     min-height:200px;
     max-height: 400px;
@@ -286,7 +330,7 @@ input {
     grid-template-rows: repeat(2,50%);
     grid-gap: 12px;
     position: absolute;
-    left: 50px;
+    left: 0;
     top: -20px;
 }
 .main-ocultar{
@@ -294,19 +338,14 @@ input {
 }
 .imagenes{
     display: grid;
-    grid-template-columns: repeat(4,minmax(4%, 5%));
-    grid-template-rows: repeat(2 ,20px);
+    grid-template-columns: repeat(3,minmax(4%, 5%));
+    grid-template-rows: repeat(3 ,20px);
     grid-gap: 78px;
     position: absolute;
     top: 38vh;
-    left: 53%;
     width: 20%;
     left: 53%;
-    width: 20%;
-
-    left: 73%;
     width: 60%;
-
     min-width: 50%;
     max-width: 100%;
 }
@@ -450,8 +489,7 @@ padding: 12px;
 }
 .imge1   > img{
     width: 100%;
-    height: 100%;
-
+    height: auto;
     z-index: -2;
     border-radius: 12px;
     width: 300px;
@@ -460,22 +498,21 @@ padding: 12px;
     min-height: 100px;
     height: 200px;
     max-width: 200px;
-    z-index: -2;
+    transform: scale(1);
 }
+.articulo:hover {
+    transform: scale(1.5); /* Esto hará un zoom del 150% cuando el mouse está sobre la imagen */
+    transition: all 1s;
+    cursor: pointer;
+}
+
 .imge1{
     position: absolute;
     top: 40%;
-    left: -7%;
-    right: 12vh;
-    width: 300px;
-    height: 150px;
-    min-height: 200px;
-    max-height: 500px;
-    height: 150px;
-    min-height: 200px;
-    max-height: 500px;
-    height: 200px;
-
+    left:-8% ;
+    width: 74%;
+    height: auto;
+ 
 
 }
 .fotos{
@@ -516,12 +553,7 @@ display: none;
 }
 .informacion {
     position: absolute;
-    left: 59%;
-    width: 350px;
-
-    left: 59%;
-    width: 350px;
-    left: 79%;
+    left: 55%;
     width: 400px;
     height: auto;
 }
@@ -532,11 +564,13 @@ display: none;
     top: 0;
     right:-6vh;
     margin-right: 8%;
-
     right:-6vh;
     margin-right: 8%;
-
     right:16vh;
+}
+.precop{
+    width: 130%;
+    height: auto;
 }
 #fotos{
  float: left;
@@ -572,7 +606,7 @@ display: none;
     height: auto;
     overflow: hidden;
     object-fit: cover;
-    transition: 2s;
+    transition: 1s all;
     border-radius: 5px;
     border: 2px brown solid;
     
@@ -580,6 +614,7 @@ display: none;
 }
 .img1 > img:hover{
     transform: scale(1.3);
+  
 }
 .img2{
     margin-bottom: 12px;
@@ -675,23 +710,21 @@ margin-bottom: 12px;
 .main-principal{
 display: grid;
 grid-template-columns: repeat( 4, 120px);
-height: 14px;
-width: 200px;
-top: 12px;
-background-color: #000;
+height: 89%;
+width:auto;
+
 position: absolute;
-left:55%;
-grid-gap: 45px;
-min-width: 200px;
-max-width: 300px;
+top: 12px;
+left:59%;
+grid-gap: 2%;
+z-index: 3;
 }
 .titulo{
     height: auto;
     min-width: 50%;
 
-    width: 170%;
-    width: 170%;
-    width: 180%;
+    width: 100%;
+   
 
     top: 10pc;
     position: relative;
@@ -765,18 +798,12 @@ z-index: 3;
 .extra{
     border-radius: 12px;
     border:2px solid gray;
-    position: relative;
-    left: 90%;
+    position: absolute;
     top: 16vh;
     height: 100vh;
-    left: 90%;
-    top: 16vh;
-    height: 100vh;
+    left: 96%;
 
-    left: 101%;
-    top: 16vh;
-    height: 76vh;
-    width: 300px;
+    width: 320px;
 }
 .extra > p{
     width: 200px;
@@ -786,7 +813,7 @@ z-index: 3;
     color: #000;
     position: absolute;
     left: 34%;
-    top: 17%;
+    top: 67%;
     font-size: 89%;
     font-weight: 25%;
     cursor: pointer;
@@ -797,16 +824,19 @@ z-index: 3;
 }
 .extra > select{
     position: absolute;
-    top: 270px;
+    top: 35%;
     margin-left: 12px;
     border-radius: 5px;
 }
+
 .enviar{
     position: absolute;
+    top: 27%;
     left: 34px;
     padding: 12px;
     color: #07093B;
     cursor: pointer;
+
 }
 .enviar:hover{
     text-decoration: underline;
@@ -815,7 +845,7 @@ z-index: 3;
     color:#07093B;
     position: absolute;
     font-size: 1.0em;
-    top:205px;
+    top:27%;
     left:18px;
     padding-right: 12px;
     cursor: pointer;
@@ -823,17 +853,18 @@ z-index: 3;
 .disponible{
     padding-top: 12px;
     position: absolute;
-    top: 224px;
+    top: 30%;
     color: #07093B;
 }
 .btn1{
     position: absolute;
-    top: 300px;
+    top:40%;
     margin-left:12px ;
     width: 270px;
     background-color: #EEF516;
     border-radius: 12px;
     height: 30px;
+    z-index: -100;
     cursor: pointer;
 }
 .btn1:hover{
@@ -841,7 +872,7 @@ z-index: 3;
 }
 .btn2{
     position: absolute;
-    top:350px;
+    top:45%;
     width: 270px;
     height: 30px;
     margin-left:12px ;
@@ -854,16 +885,16 @@ z-index: 3;
 }
 .txt1{
     position: absolute;
-    top: 390px;
+    top: 50%;
 }
 .txt2{
     position: absolute;
-    top: 420px;
+    top: 55%;
 }
 
 .txt3{
     position: absolute;
-    top: 420px;
+    top: 55%;
     left: 100px;
     width: 78px;
     cursor: pointer;
@@ -874,11 +905,11 @@ z-index: 3;
 }
 .txt4{
     position: absolute;
-    top: 470px;
+    top: 60%;
 }
 .txt5{
     position: absolute;
-    top: 470px;
+    top: 65%;
     left: 108px;
     font-size: 12px;
     cursor: pointer;
@@ -889,12 +920,12 @@ z-index: 3;
 }
 .txt6{
     position: absolute;
-    top: 500px;
+    top: 75%;
 
 }
 .txt7{
     position: absolute;
-    top: 500px;
+    top: 75%;
     left: 100px;
 }
 .masfotos{
@@ -902,30 +933,24 @@ z-index: 3;
     grid-template-columns: repeat(3, 100px);
     position: absolute;
     grid-gap: 2px;
-
-    top: 190%;
-
-    top: 190%;
-    top: 130%;
+    top: 230%;
     left: 5%;
     width: 10%;
     margin-top: 34%;
-    z-index: 100;
 
 }
 .muestra1 > img{
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     border-radius: 5px;
     cursor: pointer;
-    z-index: 100;
 }
 .muestra1 > img:hover{
     border: 2px brown solid;
 }
 .muestra2 > img{
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height:80px;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -1007,6 +1032,7 @@ color: #ECA116;
   .ver{
     position: absolute;
     top: 80%;
+    left: 2%;
     color: #07093B;
     &:hover{
         text-decoration: underline;
@@ -1015,42 +1041,149 @@ color: #ECA116;
     }
   }
   #segundo{
-    position: absolute;
-    top: 70%;
-    left: 5%;
+    position: relative;
+    top: 0;
+    left: 8%;
     &:hover{
         cursor: pointer;
         text-decoration: underline;
     }
   }
-  #abajo{
+  .fa-chevron-down{
     position: absolute;
-    top: 70%;
-    left: 5%;
+    top:0;
+    left: 0;
+    color: #000;
+  }
+  .fa-chevron-up{
+    position: absolute;
+    top:0;
+    left: 0;
+    color: #000;
   }
   .soporte{
     position: absolute;
-    top: 75%;
+    top: 55%;
   }
   .soporte1{
     position: absolute;
-    top: 75%;
+    top: 55%;
     left: 33%;
   }
   .desaparecer{
-display: none;
+    display: none;
   }
   .verm{
-    position: absolute;
-    top: 90%;
+    position: relative;
+    top: 0;
     left: 1%;
     color: #07093B;
+    z-index: 2;
     &:hover{
         text-decoration: underline;
         color: #07093B;
         cursor: pointer;
     }
   }
+  .vermas{
+    position: absolute;
+    top: 83%;
+    width: 100%;
+    height: 7%;
+  }
+  .flechas{
+    width: auto;
+    height: 100px;
+    background-color: #EEF516;
+    position: absolute;
+    top: 0;
+    border: #07093B 1px solid;
+  }
+  .estilos{
+    width: 80%;
+    height: 90%;
+    position: absolute;
+    top: 389%;
+    left: 6%;
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+  }
+  .modelos{
+    width: 60%;
+    height: 100%;
+    border:  1px black solid;
+    border-radius:  12%;
+    cursor: pointer;
+  }
+  .modelos > p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16%;
+  }
+  .caracteristicas{
+    grid-column: 1/-1;
+    grid-row: 1;
+  }
+  .caracteristicast{
+    width: 81%;
+    height: 100%;
+    grid-column: 1/-1;
+    grid-row: 3;
+    margin-top: 12%;
+  }
+  .caracteristicast >p{
+    margin: 2%;
+  }
+  .caracteristicast >hr{
+    color: #000;
+  }
+  #deta{
+    position: absolute;
+    top: 14%;
+    left:23%;
+  }
+  .buscador{
+    width: 82%;
+    height: 100%;
+    position: absolute;
+    top:2%;
+    left: 16%;
+  }
+  .rebus{
+    width: 40%;
+    height: 4%;
+    position: fixed;
+    display: flex;
+    flex-direction:row ;
+    top: 3%;
+    left: 20%;
+  }
+  .borde{
+    border: 3px orange solid;
+       border-top-right-radius:12px;
+    /*border-top-left-radius:12px;*/
+    border-bottom-right-radius:12px;
+    z-index: 100;
+  }
+  .buscador > input{
+    width: 100%;
+    height: 82%;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .buscador > input:focus{
+    outline: none;
+  }
+ .descripcion2{
+    width: auto;
+    height: auto;
+  
+    position: absolute;
+    top: 165%;
+ }
+
 @media screen and (max-width: 700px) {
  .descripcionoriginal{
     position: relative;
