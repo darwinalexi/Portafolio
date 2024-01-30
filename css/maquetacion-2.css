@@ -74,6 +74,7 @@ height:200px ;
 .main-img {
     grid-area: main-img;
     background-color: darkcyan;
+    border: 3px black solid;
     z-index: 1;
     width: 136vh;
     height: 70vh;

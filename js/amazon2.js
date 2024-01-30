@@ -4,6 +4,14 @@ let flechaa=document.getElementById("abajo")
 
 let soporte =document.querySelector(".soporte")
 let soporte1=document.querySelector(".soporte1")
+
+
+
+
+
+
+
+
 ver.addEventListener("click", ()=>{
     if (soporte.classList.contains("desaparecer")) {
         soporte.classList.remove("desaparecer")
@@ -58,4 +66,3 @@ busca.addEventListener("click", () => {
         main_content.classList.add("borde");
     }
 });
-

@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 
 body{
@@ -23,9 +24,22 @@ header {
     grid-area: logo;
     background-color: goldenrod ;
 }
+.logo > h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+}
 .main-menu {
     grid-area: main-menu;
     background-color: rgb(40, 167, 69);
+}
+.main-menu > h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 .style-text {
     font-family: Verdana,sans-serif;
@@ -68,6 +82,12 @@ header {
     grid-area: article-6;
    
 }
+.article-6> .title{
+    position: absolute;
+    top: 187%;
+    padding-left: 1.5%;
+    color: #fff;
+}
 .img-article{
     height: 350px;
     background-color: rgb(64,64,64,.8);
@@ -92,6 +112,12 @@ header {
         margin-left: 0px;
         margin-top: 12px;
         width: 80vh;
+    }
+    .article-6> .title{
+        position: absolute;
+        top: 91%;
+        padding-left: 1.5%;
+        color: #fff;
     }
     .logo{
         width: 97%;
@@ -138,7 +164,7 @@ header {
 
     .main-img {
         width: 100%; 
-        height: 10vh; 
+        height: 100%; 
         padding-top: 120px;
     }
    
@@ -177,8 +203,4 @@ header {
     .main-menu{
          width: 310px;
     }
-
-
-    /* ... (otras reglas CSS) ... */
-
 }

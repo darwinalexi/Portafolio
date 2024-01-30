@@ -53,12 +53,16 @@ img{
     height:auto;
     margin: 0;
 }
+.pr >nav > ul >a{
+    padding-left: 0;
+}
 a{
     border-right: 2px solid orange;
     text-decoration: none;
     font-size: 20px;
     justify-content: center;
     color: black;
+    padding: 0;
 }
 a:hover{
         background-color: #AAAAAA ;

@@ -1,531 +1,320 @@
-* {
-    padding: 0;
+*{
     margin: 0;
-    width: 350px;
-    background-color: hsl(182, 48%, 20%);
-  
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background-color: #000;
+    width: 100%;
+    height: auto;
 }
 
-.box-null {
-    position: fixed;
-    left: -362px;
-    transition: all 2s ease;
-    height: 100%;
-    z-index: 1;
+header{
+    width: 100%;
+    height: 70%;
+    background-color: black;
+    box-shadow: 2px 2px 2px 2px  gray;
 }
-.box{
-    width: 295px;
-    height: 100%;
-    background-color: hsl(182, 48%, 27%);
-    text-align: center;
+header > nav{
+    display: flex;
+    justify-content: center;
+}
+
+header > nav > ul{
+    display: flex;
+    flex-direction: row;
+}
+header > nav > ul > li{
     list-style: none;
-    z-index: 2;
-    position: fixed;
-    left: 0.2vh;
-    transition: all 2s ease;
-    box-shadow:  0 20px 35px gray ;
+    margin: 3%;
 }
-
-.NOM {
-    font-size: 20px;
-    position: absolute;
-    top: 190px;
-    left:-3px;
-    cursor: pointer;
-    background-color:transparent;
-    width: 250px;
-
+header > nav > ul > li > a{
+    text-decoration: none;
+    color: white;
 }
-
-img {
-    width: 130px;
-    height: 150px;
-    position: relative;
-    top: 220px;
-    background-color: hsl(182, 48%, 27%);
-
+header > nav > ul> li >a:hover{
+    color: gray;
 }
-
-p {
-    position: relative;
-    
-}
-
-.dar {
-    position: relative;
-    top: 250px;
-    left: -6px;
-    cursor: pointer;
-    background-color:transparent;
-    width: 250px;
-    z-index: 1;
-}
-
-.darwin{
-    position: relative;
-    top: 280px;
-    left: 6%;
-    cursor: pointer;
-    width: 200px;
-    height: auto;
-    color: black;
-    z-index: -6;
-    background-color: transparent;
-}
-.darwin > a{
-    background-color: brown;
-
-}
-i {
-    color: #000;
-    font-size: 40px;
-    margin: 10px;
-    position: relative;
-    top: 500px;
-    bottom: 300px;
-    left: 500px;
-    cursor: pointer;
-}
-
-.main-box {
-    position: relative;
-    bottom: 400px;
-    left: 20%;
-    display: flex;
-}
-
-.infor {
-    position: relative;
-    left: 330px;
-    top: 700px;
-}
-
-h1 {
-    font-family: 'Monomaniac One', sans-serif;
-}
-
-p {
-    font-family: 'Monomaniac One', sans-serif;
-}
-
-.NUM {
-    text-align: center;
-    position: relative;
-    bottom: 870px;
-    left: 540px;
-    top: 100px;
-}
-
-.profesion {
-    font-size: 60px;
-    float: right;
-    position: relative;
-    bottom: 400px;
-    left: 690px;
-    top: 80px;
-}
-
-.perfil {
-    font-size: 60px;
-    float: right;
-    position: relative;
-    top: 50px;
-    left: 280px;
-    cursor: pointer;
-    z-index: -12;
-}
-
-.perfil1 {
-    position: relative;
-    bottom: -120px;
-    left: 330px;
-    cursor: pointer;
-    height: auto;
-    
-}
-
-.work{
-    position: absolute;
-    right: 400px;
-    left: 296px;
-    top: 130vh;
+.presentacion{
+    width: 100%;
+    height: 50%;
+    background-color:white;
+    margin-top: 4%;
     display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(200px, 1fr));
-    grid-gap: 50px;
-    width: 70%;
-    padding-bottom: 23px;
-    view-timeline-name: --image;
-    /*se pone en boque o en linea*/
-    view-timeline-axis: block;
-    animation-timeline: --image;
-    /*nombre de la animacion*/
-    animation-name: show;
-    /*se controla la entrada de lña animacion*/
-    animation-range:entry 25% cover 50% ;
+    grid-template-columns: repeat( 2, 50%);
 }
-
-.works{
-    width: 250px;
-    height: 270px;
-    display: block;
+.presentacion > .img{
+    width: 100%;
+    height: 100%;
 }
-
-.title{
-    grid-column: 1/-1;
-    grid-row: 1;
-    width: auto;
-    height: auto;
-    font-family: 'Courier New', Courier, monospace;
+.presentacion >.nombre{
     display: flex;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+}
+.descripcion{
+    width: 95%;
+    height: auto;
+    display: block;
     justify-content: center;
     align-items: center;
-      view-timeline-name: --image;
-    /*se pone en boque o en linea*/
-    view-timeline-axis: block;
-    animation-timeline: --image;
-    /*nombre de la animacion*/
-    animation-name: show;
-    /*se controla la entrada de lña animacion*/
-    animation-range:entry 25% cover 50% ;
+    margin-top: 3%;
+    margin: 3%;
+    color: #fff;
 }
-/*se crea la animacion show*/
-@keyframes show{
-    from{
-        opacity: 0;
-        scale: 24%;
-    }
-    to{
-        opacity: 1;
-        src: 100%;
-    }
-    }
-
-a> img{
-    width: 250px;
-    height: 250px;
+.descripcion > p{
+    padding-left:2% ;
+    padding-right: 2%;
 }
-
-a >img:hover{
-    width: 250px;
-    height: 250px;
-    border: 12px black solid;
-    transition: all 1.5s ;
-}
-
-a{
-    margin: 14px;
-    width: 67%;
-    height: 5px;
-    border-radius: 5%;
-    text-decoration: none;
-    width: 20px;
-    height: 10px;
-    color: black;
-    background-color: hsl(182, 48%, 27%);
-}
-
-a:hover{
-    background-color: hsl(182, 48%, 27%);
+.descripcion > h1{
+    padding-left:2% ;
     
-    opacity: 0.2px;
-    width: 78px;
 }
-
-.DARWIN{
-    position: relative;
-    top: 270px;
-    left: -6px;
-    cursor: pointer;
-    background-color: hsl(182, 48%, 27%);
-    width: 250px;
-    z-index: 1;
-    bottom: 230px;
-}
-
-.darwin1{
-    position: relative;
-    left: -6px;
-    cursor: pointer;
-    width: 250px;
-    height: 8px;
-    background-color: hsl(182, 48%, 27%);
-    bottom: -250px;
-    z-index: 2;
-}
-
-.item{
+.informacion{
     width: 100%;
-    position: fixed;
-    top: 0px;
-    height: 70px;
-    text-align: center;
-    justify-content: center;
-    background-color: aliceblue;
-    z-index: 1;
-     background-color: hsl(182, 48%, 27%);
-     box-shadow: 0 20px 35px  grey;
-     transition:  all 2s ease;
+    height: 10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
-
-ul{
-    background-color: none;
+.item1>h1{
+    margin-left: 6%;
+    color: white;
+} 
+.item1 >p{
+    margin-left: 6%;
+    padding: 1%;
+    cursor: pointer;
+    color: white;
+}
+.item2{
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+.item2 > h1{
+    margin-left: 6%;
+}
+.item2 > i{
     display: flex;
-    list-style: none;
-    position: relative;
-    left: -15%;
+    flex-direction: row;
+    margin-left: 6%;
 }
-
-li{
-    background-color: hsl(182, 48%, 27%);
-    float: left;
+.item2 > p{
     position: relative;
-    right: 50px;
-}
-
-li> a{
-    position: relative;
-    left: 750px;
-    top: 25px;
-    margin-left: 20px;
+    left: 17%;
+    top: -10%;
     cursor: pointer;
-    z-index: 3;
-    background-color: hsl(182, 48%, 27%);
-    
-}  
+}
+.item2 > a{
+    text-decoration: none;
+    padding-left: 6%;
+    color: #fff;
+    position: relative;
+    left: 12%;
+    top: -10%;
+    cursor: pointer;}
+.item3> p{
 
- .fa-bars {
-    position: absolute;
-    left:10px;
-    top:  0;
-    z-index: 500;
+    padding: 1%;
+    cursor: pointer;
+    margin-left: 6%;
+    color: #fff;
     width: auto;
-    height: 36px;
-    font-size: 30px;
-    color: brown;
-    background-color: transparent;
 }
-
-.menu{
-    position: fixed;
-    left: 0px;
-    background-color: antiquewhite;
-    z-index: 5;
-}
-
-.itemnull{
-    width: 100%;
-    position: fixed;
-    top: -100px;
-    height: 70px;
-    text-align: center;
-    justify-content: center;
-    background-color: aliceblue;
-    z-index: 2;
-    background-color: hsl(182, 48%, 27%);
-    box-shadow: 0 20px 35px  grey;
-    transition:  all 2s ease;
-    z-index: 2;
-}
-
-#cerrar{
-    display: none;
-}
-.contacto{
-    background-color: aliceblue;
-}
-
-.rueda{
-    background-color: brown;
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-    position: absolute;
-    top: 0%;
-    z-index: 2;
-    transition: all 2s ease;
-}
-.rueda1{
-    position: absolute;
-    top: 50%;
-    background-color: brown;
-    width: 50px;
-    height: 50px;
-    border-radius: 80%;
-    transition: all 2s ease;
-}
-.encendedor{
-    float: right;
-    width: 50px;
-    height: 70px;
-    position: fixed;
-    left: 95%;
-    border-radius:22px ;
-    z-index: 2;
-    cursor: pointer;
+.item3 > h1{
+    width: auto;
+    margin-left: 6%;
+    color: #fff;
 }
 html{
     scroll-behavior: smooth;
 }
-.fa-github{
+.hojadevida{
+    width: 50%;
+    height: auto;
     position: absolute;
-    left: -50%;
-    top: 80%;
-    background-color: hsl(182, 48%, 27%);
+    top: 300%;
+    left: 26%;
+
+
 }
-.git{
-    position: absolute;
-    top: 76%;
-    left: 12%;
-    width: 200px;
-    background-color: transparent;
-    transition: all 2s ease;
+.hojadevida > p>a{
+    width:100%;
+    height: 150%;
+    text-decoration: none;
+    border:  2px gray solid;
+    border-radius: 12px ;
+    color: white;
 }
-.git > p{
+.hojadevida > p> a:hover{
+    color: gray;
+}
+.hojadevida >p{
     display: flex;
     justify-content: center;
-    width: 80%;
-    background-color: transparent;
-}
-@media screen and (max-width: 600px) {
-    
-    .item{
-        display: none;
-    }
-    
-    .principal {
-        transform: translateY(10vh);
-      }
-
-    *{
-        background-color: hsl(182, 48%, 27%);
-
-}
-.box{
-    width: 400px;
-    position: fixed;
-    top: -120px;
-    left: -35px;
-    min-width: 400px;
-    max-width: 400px;
-}
-.box-null{
-    position: fixed;
-    left: -382px;
-    top: -120px;
-    transition: all 2s ease;
-}
-.NOM{
+    width: 23%;
+    align-items: center;
+    height: 18%;
     position: relative;
-    left: 80px;
+    left: 36%;
 }
-.dar{
-    position: relative;
-    left: 80px;
-    top: 210px;
-
+.trabajos{
+    width: 95%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 3%;
+    margin-top: 5%;
+    margin-left: 2px;
 }
-.darwin1{
+.trabajo{
+    width: 90%;
+    height: 100%;
+    border-radius: 12px;
+    border: gray 2px solid;
+}
+.trabajo >a> img{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+.trabajo > a>img:hover{
+    opacity: 39%;
+}
+.trabajos > .titulo{
+    display: grid;
+    grid-column: 1/-1;
+    grid-row: 1;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+}
+ #hamburguesa{
+display: none;
+}
+.menu1{
     position: absolute;
-    top: 530px;
-    left: 92px;
-  display: flex;justify-content: flex-start;
-background-color: transparent;
-}
-.DARWIN{
-    position: relative;
-    top: 240px;
-    left: 80px;
-}
-.darwin{
-    z-index: 1;
-    position: relative;
-    top: 250px;
-    left: 80px;
-}
-.profesion{
-    display: none;
-}
-.NUM{
-    display: none;
-}
-.perfil{
-    position: fixed;
-    top: 900px;
-    left: 0;
-    
-}
-.perfil1{
-    position:relative;
-    top: 990px;
-    left: 0px;
-}
-.infor{
-    position: fixed;
-    top: 600px;
-    left:0px;
-    z-index: 1;
-}
-.work{
-    position: fixed;
-    top: 70em;
-    left: 0px;
+    top: 6.6%;
+    right: 2%;
     display: block;
-   
-}
-img{
-    width: 200px;
-    height: 200px;
-    position: relative;
-    bottom: 40px;
-}
-ul{
-    position: absolute;
-    right: 180%;
-    z-index: 1;
-    font-size: 1em;
-   
+    background-color: #000;
+    transition: all ease 2s;
 }
 .menu{
-    position: relative;
-    left:10px;
-    top:  0;
-    z-index: 500;
-    width: auto;
-    height: 36px;
-    font-size: 30px;
-    color: brown;
-    background-color: hsl(182, 48%, 20%);
-}
-.menu > i{
-    position: relative;
-    left:10px;
-    top:  0;
-}
-.main-box {
-    display: none;
-}
-#items{
-position: absolute;
-top: 0;
-height: 100px;
-width: 100%;
-}
-ul{
-    position: absolute;
-    top: 18px;
-    font-size: 0.9em;
-    padding-left: 2vh;
-}
-#profesion{
-    display: none;
-}
+    display: flex;
+    justify-content: center;
 
-#conocimiento{
-    display: none;
 }
-
-#cerrar{
+.contacto{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
     position: absolute;
-    top: 0;
+    top: 340%;
 }
+.contacto >.titulo{
+    display: grid;
+    grid-column: 1/-1;
+    grid-row: 1;
+    justify-content: center;
+    padding-bottom: 6%;
+    color: #fff;
+}
+.contacto > .medio{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+.contacto >.medio >a{
+    color: #fff;
+    font-size: 300%;
+}
+@media screen and (min-width: 1250px) and (max-width:1280px) {
+    body{
+        background-color: blue;
+    }
+} 
+@media screen and (max-width: 600px) {
+    .informacion{
+        width: 85%;
+        height: auto;
+        gap: 5%;
+    }
+    .contacto>.medio>a{
+        font-size: 150%;
+    }
+    .trabajos{
+            position: absolute;
+            top: 240%;
+
+    }
+    .contacto{
+    position: absolute;
+    top:1360%;
+    width: 100%;
+    }
+    .hojadevida{
+        position: absolute;
+        top: 1330%;
+        margin-right: 45%;
+    }
+    .hojadevida >p {
+        display: flex;
+        justify-content: center;
+        width: 60%;
+        align-items: center;
+        height: 18%;
+        position: relative;
+        left: 22%;
+    }
+    .hojadevida > p> a{
+        font-size: 13px;
+        display: flex;
+        justify-content: center;
+    }
+    .presentacion{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        gap: 3%;
+        overflow: hidden;
+    }
+
+    .presentacion >.img{
+        margin-left: 0;
+    }
+    header{
+        width: 30%;
+        height:50%;
+        background-color:transparent;
+        position: absolute;
+        top: 7%;
+        right: 0;
+        overflow: hidden;
+        box-shadow: none;
+    }
+    .menu{
+        width: 50%;
+        height: auto;
+        background-color: #000;
+        display: block;
+        position: absolute;
+        top: 7%;
+        right: -100%;
+        transition: all ease 2s;
+    }
+    #hamburguesa{
+        color: red;
+        z-index: 5;
+        font-size: 1.6em;
+        position: absolute;
+        top: 6%;
+        right: 2%;
+        display: flex;
+    }
+    .presentacion{
+        margin-top: 20%;
+    }
 }
